@@ -1,0 +1,17 @@
+/*mặc định mới chạy*/
+a:link{
+	color: green;
+}
+/*khi di chuyển contror vào*/
+a:hover{
+	color: red;
+	text-decoration: none;
+}
+/*khi click ít nhất 1 lần*/
+a:visited{
+	color: blue;
+}
+/*khi đang click*/
+a:active{
+	color: black;
+}

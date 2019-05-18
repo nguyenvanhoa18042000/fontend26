@@ -1,0 +1,36 @@
+.border{
+	width: 120px;
+	height: 135px;
+	border: ridge 2px;
+	margin: 5px;
+	float: left;
+	padding-top: 2px;
+
+}
+img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+a{
+	text-align: center;
+	color: orange;
+	text-decoration: none;
+}
+
+.price{
+	text-align: center;
+	color: red;
+	font-weight: bold;
+}
+a , p{
+	font-size: 12px;
+	font-family: Arial;
+}
+.border:hover {
+	border-color: #FE9A2E;
+}
+ .phone_name:hover {
+	color: green;
+}

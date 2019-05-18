@@ -1,0 +1,16 @@
+div{
+	width: 200px;
+	height: 100px;
+}
+#div1{
+background: red;
+display:none;
+}
+#div2{
+background: blue;
+display:inline-block;
+}
+#div3{
+background: green;
+display:inline-block;
+}

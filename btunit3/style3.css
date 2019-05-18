@@ -1,0 +1,189 @@
+*{
+	box-sizing: border-box;
+}
+
+.chen{
+	background-image: url('../images1/menu_bar.gif');
+	width: 148px;
+	height: 26px;
+	text-align: center;
+	font-weight: bold;
+	color: white;
+	padding-top: 6px;
+
+}
+#right_content>div{
+ border:#E6E6E6 ridge 3px;
+ width: 150px; 
+ margin-top: 20px; 
+}
+#left_content>div{
+ border:#E6E6E6 ridge 3px;
+ width: 150px;  
+ margin-top: 20px;
+}
+.can_trai{
+	padding-left: 7px;
+}
+#br{
+	margin-top: 5px;
+
+}
+
+#main_content{
+	width: 60%;
+}
+
+#edit_border1{
+	background: #F7BE81;
+	border: #FAAC58 ridge 1px;
+	border-radius: 15px;
+	font-style: italic;
+	color: white;
+	padding: 4px 8px;
+	margin-bottom: 27px;
+}
+
+#edit_border2 img{
+	width: 156px;
+	float: left;
+	display: inline-block;
+	border:#F2F2F2 ridge 3px;
+}
+
+#edit_border3{
+	width: 321px;
+	height: 108px;
+	float: left;
+	text-align: justify;
+	display: block;
+	padding-left: 5px;
+	margin-bottom: 25px;
+
+}
+
+#edit_border4 img{
+	width: 154px;
+	float: right;
+	display: inline-block;
+	height: 108px;
+	border:#F2F2F2 ridge 3px;
+	margin-bottom: 20px;
+}
+
+.edit_word1{
+	color: orange;
+}
+.edit_word1:hover{
+	color: blue;
+}
+.edit_word2 a{
+	color: orange;
+}
+.edit_word3 {
+	color: orange;
+	text-align: right;
+}
+.edit_word3:hover {
+	color: blue;
+}
+.item{
+	width: 70px;
+	margin-top: 5px;
+	height: 27px;
+	float: left;
+	font-weight: bold;
+	padding-top: 9px;
+	padding-left: 8px;
+	border-right: #585858 ridge 1px;
+}
+.edit_item{
+	padding-left: 13px;
+}
+
+.item a{
+	color: #FF8000;
+}
+a:hover{
+	color: blue;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+.bar_left{
+	background-image: url('../images1/main_bar_left.gif');
+	background-repeat: no-repeat;
+	height: 25px;
+	text-align: left;
+	padding-top: 5px;
+	font-weight: bold;
+	color: white;
+	clear: left;
+	padding-left: 5px;
+}
+.bar_right{
+	background-image: url('../images1/main_bar_right.gif');
+	background-repeat: no-repeat;
+	height: 25px;
+	text-align: right;
+	padding-top: 5px;
+	font-weight: bold;
+	color: white;
+	clear: left;
+	padding-right: 5px;
+}
+
+#banner div img{
+height: 300px;
+width: 100%;
+background-repeat: no-repeat;
+background-image: url(../images1/123.jpg); 
+}
+#main_content{
+width: : 60%;
+float: left;
+margin-top: 20px;
+}
+#left_content{
+	float: left;
+	width: 20%;
+}
+#right_content{
+	float: left;
+	width: 20%;
+	padding-left: 9px;
+}
+#border_footer{
+	height: 50px;
+	background: #585858;
+	color: white;
+	text-align: center;
+	padding-top: 20px;
+	border-top: orange ridge 3px;
+	clear: left;
+}
+#menu{
+	height: 40px;
+	background:#424242;
+	border-bottom: orange solid 2px;
+	margin-top: -4px;
+}
+#Main{
+	background: white;
+	border: white solid 2px;
+	width:60%; 
+	font-family: Arial;
+	font-size: 12px;
+	margin: 0 auto;
+}
+body{
+background-image: url(../images1/tuyet.jpg);
+background-repeat: repeat;
+
+}
+#content{
+	margin-top: -15px;
+}
