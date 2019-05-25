@@ -51,10 +51,9 @@ body{
 a{
 	text-decoration: none;
 }
-#menu ul li:hover a,.title a:hover{
+#menu ul li:hover a{
 	color: orange;
 }
-
 /*css cho menu*/
 #Main{
 	position: relative;
@@ -128,7 +127,6 @@ img{
 	font-size: 12px;
 	border-bottom:1px solid blue;
 }
-
 .table {
 	width: 260px;
 	position: relative;
@@ -136,10 +134,11 @@ img{
 	margin-right: 15px;
 	margin-bottom: 20px;
 }
-.table img:hover .content-text{
+.table:hover .content-text{
 	color: orange;
+	background-color:#4267b2 ;
+	color: white;
 }
-
 .content-text {
 	margin: 0;
 	padding-left: 10px;
@@ -153,7 +152,6 @@ img{
 	line-height: 40px;
 	font-weight:bold;
 }
-
 .content-note {
 	position: absolute;
 	font-size: 14px;
