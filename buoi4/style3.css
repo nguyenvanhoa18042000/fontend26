@@ -1,0 +1,29 @@
+#div1{
+	width: 200px;
+	height: 200px;
+	background-color: red;
+	z-index: 0;
+	left: 20px;
+	position: absolute;
+}
+#div2{
+	width: 200px;
+	height: 200px;
+	background-color: orange;
+	z-index: 3;
+	left: 10px;
+	position: fixed;
+	/*margin-top: 40px;*/
+}
+#div3{
+	width: 200px;
+	height: 200px;
+	background-color: green ;
+	z-index: 2;
+	position: absolute;
+	/*lên tao 1 css div1,#div2,#div3 để tạo kích thước cho nhanh*/
+}
+.parent{
+	position:relative; 
+	/*làm bài thì đừng nên đặt kích thước cho thằng cha*/
+}

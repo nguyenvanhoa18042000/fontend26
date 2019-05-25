@@ -1,0 +1,89 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#menu{
+	width: 90%;
+	margin: 0 auto;
+	height: auto;
+	font-family: Arial;
+	font-size: 14px;
+	
+}
+nav{
+	background-color: #7EB044;
+	/*#008000 màu đậm hơn*/
+	color: white;
+	height: 50px;
+}
+.add-border i{
+	position: relative;
+	top:4px;
+	color: #FFFFFF;
+	font-size: 25px;
+}
+#menu nav ul li{
+	height: 50px;
+	float: left;
+	position: relative;
+	padding-left: 10px;
+	line-height: 50px;
+	vertical-align: middle;
+	list-style-type: none;
+}
+#menu nav ul li a{
+	text-decoration: none;
+	color: white;
+	padding-right: 10px;
+}
+#menu nav ul li a:hover{
+	color: orange;
+	font-weight: bold;
+	
+}
+
+#space-icon{
+	float: left;
+	width: 35px;
+	height: 35px;
+	position: relative;
+	left: 160px;
+	top: 8px;
+	border: 1px solid white;
+	border-radius: 50%;
+	line-height: 35px;
+	text-align: center;
+}
+#space-icon i{
+   font-size: 20px;
+}
+/*thêm border right*/
+.add-border{
+	border-right: 1px solid #D8D8D8;
+	padding-right: 7px;
+	padding-left: 10px !important;
+}
+.sub-menu li a{
+	color: black !important;
+}
+#menu nav ul li:hover .sub-menu{
+	display:block;
+}
+.sub-menu{
+	display: none;
+	position: absolute;
+	left: 0px;
+	width:250px;
+	background-color: #90c95a;
+}
+.sub-menu li{
+	height: 30px !important;
+	line-height: 30px !important;
+	width: 240px;
+	display: block;
+	border-bottom: 1px solid green;
+	cursor: pointer;
+}
+.sub-menu li a:hover {
+	color: white !important;
+}
