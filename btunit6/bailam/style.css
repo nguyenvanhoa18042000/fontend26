@@ -1,0 +1,404 @@
+/*CSS cho phần hearder*/
+#header{
+	width: 100%;
+	height: 102px;
+	text-align: center;
+	margin: 0 auto;
+}
+.menu{
+	display: inline-block;
+	list-style: none;
+	padding: 0px 10px 0px 30px;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	margin-bottom: 90px;
+}
+#header>img{
+	display: inline-block;
+}
+.menu>li{
+	float: left;
+	padding: 7px 17px;
+}
+.menu>ul>li>a{
+	color: black;
+	padding: 15px;
+	font-size: 20px;
+	text-decoration: none;
+}
+/*kết thúc CSS cho phần header*/
+
+/*CSS cho phần main (content)*/
+#main{
+	width: 100%;
+	margin: 0 auto;
+	background-color: #F2F2F2;
+	margin:0;
+	padding: 0;
+}
+#title{
+	text-align: center;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 36px;
+	color: #0baf90;
+	padding-top: 10%;
+}
+#share{
+	font-weight: bold;
+	text-align: center;
+	font-size: 18px;
+	margin-top: 2%;
+	margin-bottom: 6%;
+}
+.selection-list{
+	width: 96%;
+	height: auto;
+	margin: 0px auto;
+}
+.selection{
+	float: left;
+	width: 30%;
+	height: auto;
+	margin: 0% 1% 2% 2%;
+}
+.delete-marginright{
+	margin-right: 0px;
+}
+.selection>img{
+	width: 97%;
+	height: auto;
+	border:4px solid white;
+}
+.content-selection{
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+.icon{
+	position: absolute;
+	color: #1ea9a9;
+	margin: 0px;
+	right: 2%;
+	top: 0px;
+}
+.name-selection{
+	font-weight: bold;
+	font-size: 14px;
+	color: #1ea9a9;
+	margin: 1% 0%;
+}
+.text-selection{
+	font-size: 17px;
+	color: #1ea9a9;
+	margin-top: 2%;
+	margin-bottom: 8%;
+}
+#sentence{
+	font-weight: bold;
+	font-size: 12px;
+	padding-bottom: 5%;
+	padding-left: 2%;
+}
+#talk{
+	width: 100%;
+	height: auto;
+	margin: 0% 3%;
+	background-color: white;
+}
+#about-me{
+	float: left;
+	width: 55%;
+	margin-right: 5%;
+	margin-bottom: 5%;
+}
+#connective{
+	width: 37%;
+	float: left;
+	margin-bottom: 15px;
+}
+.weith-blue{
+	font-weight: bold;
+	font-size: 25px;
+	color: #0baf90;
+	margin: 2% 0%;
+}
+.text{
+	font-size: 17px;
+	color: #0cb6c7;
+}
+.edit-text{
+	font-size: 19px;
+	color: #0cb6c7;
+	margin: 3% 0%;
+}
+/*kết thúc CSS cho main*/
+a{
+	text-decoration: none;
+}
+#title:hover, .weith-blue:hover,.name-selection:hover{
+	color: #f36e24;
+}
+/*tao border và hover cho icon*/
+.border-radius{
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	text-align: center;
+	box-sizing: border-box;
+	padding-top: 8px;
+	margin: 0% 3%;
+}
+#fb{
+	color: white;
+	background-color: #3131b9d1;
+	border:1px solid white;
+	margin-left: 1%;
+}
+#twitter{
+	color: white;
+	background-color: #03a9f4;
+	border:1px solid white;
+}
+#youtobe{
+	color: white;
+	background-color: red;
+	border:1px solid white;
+}
+#mixcloud{
+	color: white;
+	background-color: black;
+	border:1px solid white;
+}
+
+#fb:hover{
+	border:1px solid #3131b9d1;
+	background-color: white;
+	color: #3131b9d1;
+}
+#youtobe:hover{
+	border:1px solid red;
+	background-color: white;
+	color: red;
+}
+#twitter:hover{
+	border:1px solid #03a9f4;
+	color: #03a9f4;
+	background-color: white;
+}
+#mixcloud:hover{
+	border:1px solid black;
+	color: black;
+	background-color: white;
+}
+/*kết thúc tạo border và hover cho icon*/
+
+/*CSS cho footer*/
+#footer{
+	background-color: #4bb3a4a3;
+	width: 100%;
+	margin: 0 auto;
+	padding: 1%;
+	color: white;
+	box-sizing: border-box;
+}
+form{
+	margin: 0px 5%;
+}
+.width-max{
+	width: 100%;
+	margin-bottom: 16px;
+}
+input[type=submit] {
+	height: auto;
+	background-color: #0d6f5d;
+	font-weight: bold;
+	color: white;
+	padding: 1% 2%;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+input[type=submit]:hover{
+	background-color: #3131b9d1;
+	color: white;
+	font-weight: bold;
+}
+#name ,#email {
+	width: 100%;
+	padding: 5px;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	margin-bottom: 2%;
+}
+#bigger{
+	font-size: 25px;
+	font-weight: bold;
+	margin-bottom: 0px;
+}
+#delete-margintop{
+	margin-top: 0px;
+}
+/*kết thúc css cho footer*/
+
+/*Responsive cho bài*/
+@media screen and (max-width: 480px) {
+	*{
+		padding: 0;
+		margin: 0;
+	}
+	#header>img{
+		width: 157px;
+		height: 140px;
+	}
+	#header>ul{
+		display: none;
+	}
+	#title{
+		font-size: 25px;
+		padding-top: 15%;
+	}
+	#share{
+		font-size: 13px;
+	}
+	.selection{
+		width: 96%;
+	}
+	#main{
+		width: 100%;
+	}
+	#sentence{
+		margin-left: 2%;
+	}
+	#talk{
+		margin: 0px;
+	}
+	#about-me{
+		width: 100%;
+		box-sizing: border-box;
+		padding-left: 3%;
+		margin-right: 0px;
+	}
+	.text-selection{
+		font-size: 13px;
+	}
+	#connective{
+		width: 100%;
+		box-sizing: border-box;
+		padding-left: 3%;
+		margin-bottom: 7%;
+	}
+	#footer{
+		width: 100%;
+	}
+	input[type=submit] {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 481px) and (max-width: 700px) {
+	*{
+		padding: 0;
+		margin: 0;
+	}
+	.menu>li{
+		font-size: 9px;
+		padding: 7px 12px;
+	}
+	#header>img{
+		width: 163px;
+		height: 155px;
+	}
+	#title{
+		padding-top: 15%;
+	}
+	.selection{
+		width: 47%;
+		float:left;
+	}
+	#main{
+		width: 100%;
+	}
+	.clear-of-700px{
+		clear: left;
+		float: left;
+	}
+	.delete-marginright{
+		margin: 0% 1% 2% 2%;
+	}
+	#talk{
+		margin: 0px;
+	}
+	#sentence{
+		margin-left: 2%;
+	}
+	#about-me{
+		width: 100%;
+		box-sizing: border-box;
+		padding-left: 3%;
+		margin-right: 0px;
+	}
+	#connective{
+		width: 100%;
+		box-sizing: border-box;
+		padding-left: 3%;
+		margin-bottom: 7%;
+	}
+	.text-selection{
+		font-size: 13px;
+	}
+	#footer{
+		width: 100%;
+	}
+}
+@media screen and (min-width: 701px) and (max-width: 960px) {
+	*{
+		padding: 0;
+		margin: 0;
+	}
+	#header{
+		width: 75%;
+	}
+	.menu>li{
+		font-size: 9px;
+		padding: 7px 12px;
+	}
+	#header>img{
+		width: 163px;
+		height: 155px;
+	}
+	#title{
+		font-size: 26px;
+		padding-top: 13%;
+	}
+	.text-selection{
+		font-size: 13px;
+	}
+	.clear-of-960px{
+		clear: left;
+		float: left;
+	}
+	#main{
+		width: 75%;
+		margin:0 auto;
+	}
+	#talk{
+		margin: 0px;
+	}
+	#about-me{
+		width: 55%;
+		box-sizing: border-box;
+		padding-left: 3%;
+		margin-right: 0px;
+	}
+	#connective{
+		width: 37%;
+		box-sizing: border-box;
+		padding-left: 3%;
+		margin-bottom: 7%;
+	}
+	#footer{
+		width: 75%;
+	}
+}
+/*kết thúc responsive cho bài

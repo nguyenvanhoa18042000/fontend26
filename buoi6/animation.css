@@ -1,0 +1,52 @@
+div{
+	width: 400px;
+	height: 400px;
+	/*background-color: red;*/
+	/*to left là màu từ trái qua phải to right là từ phải qua trái*/
+	background: linear-gradient(to left bottom, red, yellow,green);
+	/*khi muốn tự động chạy mà ko cần hover thì để 3 tk dưới ở div*/
+	/*animation-name:test;
+	animation-duration: 8s;
+	animation-iteration-count: infinite; */
+	/*số lần lặp*/
+	/*kích thước hình vuông thì khi border-radius 50% nó mới tròn đc*/
+}
+div:hover{
+	/*khi muốn chỉ chuột vào n mới đổi màu*/
+	animation-name:test;
+	animation-duration: 8s;
+	animation-iteration-count: infinite; 
+}
+@keyframes test{
+	0%{
+		background-color: red;
+	}
+	25%{
+		background-color: orange;
+	}
+	50%{
+		background-color: blue;
+	}
+	75%{
+		background-color: yellow;
+	}
+	100%{
+		background-color: black;
+	}
+	/*8s chia 5 phần mỗi phần 2s*/
+	/*from{background-color: red;}
+	to{background-color: green;}*/
+}
+/*#transition{
+	width: 200px;
+	height: 200px;
+	background-color: black;
+}
+#transition:hover{
+	width: 300px;
+	height: 300px;
+	background-color: orange;
+	nếu muốn transition ở dưới hover mà đổi màu background thì phải k.báo màu nền mk muốn đổi
+	transition: width 3s,height 3s,background-color 2s;
+	/*tk này đúng thì ko nên để ở hover*/
+/*}*/
