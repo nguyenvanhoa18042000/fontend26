@@ -1,0 +1,534 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: Arial;
+}
+#header{
+}
+#content-header{
+	width: 90%;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 3%;
+}
+#main-title>a>span{
+	color: #FF543E;
+}
+.orange-word{
+	color: #FF543E!important;
+}
+#header a{
+	width: 100%;
+	height: auto;
+	text-decoration: none;
+	color: gray;
+}
+#main-title{
+	width: 50%;
+	float: left;
+	font-size: 35px;
+}
+#menu{
+	width: 50%;
+	float: left;
+}
+#menu #danh-muc{
+	display: block;
+}
+#menu ul{
+	overflow: hidden;
+	list-style-type: none;
+	padding-top: 2%;
+}
+#menu ul li{
+	float: left;
+    font-size: 13px;
+    font-weight: bold;
+    margin-right: 5%;
+}
+#main-title a:hover, #menu ul li a:hover{
+	color: #0dbf23 !important;
+}
+/*Kết thúc css cho header*/
+
+/*CSS cho main( content )*/
+#main>img{
+	width: 100%;
+}
+.main-text1{
+	text-align: center;
+	margin: 5% 0;
+}
+.medium-word{
+	font-size: 24px;
+	text-align: center;
+}
+.title{
+	font-size: 30px;
+	margin-bottom: 6%;
+	text-align: center;
+}
+#list-icon1{
+	text-align: center;
+	height: auto;
+	overflow: hidden;
+}
+.creative-solutions{
+	float: left;
+	width: 21%;
+	height: auto;
+	margin: 3% 2%;
+}
+.creative-solutions>p{
+	margin-bottom: 30%;
+}
+.creative-solutions>i{
+	color: white;
+    width: 80px;
+    font-size: 40px;
+    line-height: 80px;
+    border: 0px solid white;
+    border-radius: 50%;
+    background-color: #FF543E;;
+    margin-bottom: 30%;
+}
+.main-text2{
+	clear: both;
+    text-align: center;
+    width: 36%;
+    margin: 0 auto;
+}
+.small-word{
+	font-size: 13px;
+}
+#img{
+	width: 90%;
+	height: auto;
+	margin: 6% auto;
+	overflow: hidden;
+}
+.div-img{
+	width: 45%;
+	float: left;
+
+}
+.div-img:first-child{
+	text-align: center;
+	margin:0 4%;
+}
+.div-img:first-child>img{
+	width: 100%;
+}
+.div-img:last-child>img{
+	width: 95%;
+}
+#list-icon2{
+	width: 88%;
+	margin: 0 8%;
+	overflow: hidden;
+}
+.content{
+	width: 31%;
+	float: left;
+	margin-right: 2%;
+}
+.content>div{
+	float: left;
+}
+.content-icon{
+	width: 63%;
+	height: auto;
+	margin-left: 4%;
+}
+.icon{
+	color: white;
+    width: 80px;
+    font-size: 40px;
+    line-height: 80px;
+    border: 0px solid white;
+    border-radius: 50%;
+    background-color: #FF543E;
+    text-align: center;
+}
+#share{
+	background-color: #f7f5f5a8;
+}
+.content-icon>.small-word{
+	padding-top: 10%;
+}
+#main-text3{
+	background-color:#ff6b3e ;
+	margin-top: 10%;
+}
+#main-text3 .title{
+	text-align: center;
+	margin-bottom: 2%;
+	padding-top: 7%;
+	color: white;
+}
+#main-text3 .small-word{
+	text-align: center;
+	color: white;
+	font-size: 14px;
+	margin-bottom: 4%;
+}
+#text-border-radius{
+	text-align: center;
+	padding-bottom: 6%;
+}
+#text-border-radius span{
+	color: #302c2c;
+	border-radius: 20px;
+	background-color: white;
+	padding:12px;
+	margin-left: -1%;
+}
+#main-text4{
+	padding-top: 9%;
+}
+#main-text4>.medium-word{
+	padding-bottom: 1%;
+}
+#list-people{
+	width: 80%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.people{
+	width: 22%;
+	float: left;
+	text-align: center;
+	margin-right: 4%;
+	padding-bottom: 10%;
+}
+.delete-margin-right{
+	margin-right: 0;
+}
+.people>img{
+	border-radius: 15%;
+}
+.name{
+	font-size: 20px;
+	padding-top: 15%;
+	padding-bottom: 5%;
+	color: #2e2b2b;
+}
+#main-text4 a,.main-text1 a,#list-icon1 a,.main-text2>a,.content-icon a,#text-border-radius a{
+	text-decoration: none;
+	color: #000000cf;
+}
+.add-margintop{
+	margin-top: 1%;
+}
+#main-text4 a:hover,.main-text1 a:hover,#list-icon1 a:hover,.main-text2>a:hover,.content-icon a:hover{
+	color: #0dbf23;
+}
+#text-border-radius a:hover span{
+	cursor: pointer;
+	background-color: black;
+	font-weight: bold;
+	color: white;
+}
+/*kết thúc CSS cho content*/
+
+/*CSS footer*/
+#footer{
+	width: 100%;
+}
+#footer1{
+	background-color: #000000c9;
+	color: white;
+	overflow: hidden;
+	padding-bottom: 2%;
+}
+.content-footer{
+	width: 84%;
+	margin: 0 auto
+}
+.col{
+	width: 30%;
+	float: left;
+	margin-right: 3%;
+}
+.section{
+	font-size: 17px;
+    margin: 16% 0;
+    padding-top: 7%;
+}
+.multi,.content-info,.content-post{
+	font-size: 14px;
+	line-height: 25px;
+}
+.content-post,.content-info{
+	border-bottom: 1px solid white;
+	padding:5% 0;
+}
+.delete-padding-top{
+	padding-top: 0;
+}
+.content-info>span>i{
+	font-size: 25px;
+}
+.delete-border{
+	border-bottom: none;
+}
+#footer2{
+	width: 100%;
+	background-color: black;
+	overflow: hidden;
+	padding: 3% 0;
+}
+.content-footer2{
+	width: 84%;
+	overflow: hidden;
+	margin: 0 auto;
+}
+#copyright{
+	color: white;
+	width: 65%;
+	float: left;
+	font-size: 15px;
+}
+#menu2{
+	width: 35%;
+	float: left;
+	font-size: 13px;
+    font-weight: bold;
+}
+#menu2 ul{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+#menu2 ul li{
+	float: left;
+	margin-right: 5%;
+}
+#menu2 ul li a{
+	text-decoration: none;
+	color: white;
+	display:block;
+}
+#connective{
+	padding-top: 10%;
+}
+#connective>a i{
+	font-size: 30px;
+    margin-right: 5%;
+    color: white;
+}
+.col>a{
+	color: white;
+	text-decoration: none;
+}
+.col>a:hover,#menu2 ul li a:hover{
+	color: orange;
+	font-weight: bold;
+}
+/*kết thúc CSS cho footer*/
+
+/*Responsive phone*/
+@media screen and (max-width: 480px) {
+	#menu{
+		position: relative;
+	}
+	#menu ul{
+		display: none;
+	}
+	#danh-muc{
+		width: 30px;
+		line-height: 23px;
+		text-align: center;
+		color: gray;
+		display: block;
+		border-radius: 3px;
+		border: 1px solid gray;
+		position: absolute;
+		right: 0;
+		top: 10px;
+	}
+	#list-icon1{
+		background-color: #f7f5f5;
+	}
+	.creative-solutions{
+		width: 100%;
+	}
+	.main-text2{
+		width: 90%;
+		padding-top: 10%;
+	}
+	.div-img,.content{
+		width: 100%;
+	}
+	.icon{
+		width: 52px;
+   		 line-height: 52px;
+   		 font-size: 25px;
+	}
+	.main-text1{
+		margin: 13% 0;
+	}
+	.medium-word{
+		font-size: 18px;
+	}
+	.title{
+		font-size: 24px;
+	}
+	.list-icon2{
+		padding-left: 4%;
+	}
+	.content-icon{
+		width: 70%;
+	}
+	.content-icon>.small-word {
+    padding-top: 6%;
+	}
+	.content{
+		margin-bottom: 10%;
+	}
+	#main-text3 .small-word{
+		padding: 5% 0;
+		font-size: 13px;
+	}
+	#text-border-radius span{
+		padding: 6px;
+		margin-left: -3%;
+	}
+	#text-border-radius{
+		padding-bottom: 12%;
+	}
+	.people{
+		width: 100%;
+		padding-bottom: 25%;
+	}
+	.name{
+		padding-top: 7%;
+		padding-bottom: 2%;
+	}
+	.col{
+		width: 100%;
+	}
+	.section{
+		margin-top: 7%;
+		margin-bottom: 9%;
+	}
+	#copyright{
+		width: 100%;
+    	padding-bottom: 2%;
+    	font-size: 12px;
+	}
+	#menu2{
+		width: 100%;
+		font-size: 10px;
+		padding-left: 15%;
+	}
+	.add-paddingtop{
+		padding-top: 15%;
+	}
+	.creative-solutions>p {
+    margin-bottom: 17%;
+	}
+}
+/*kết thúc responsive cho phone*/
+
+/*responsive cho tablet*/
+@media screen and (min-width: 480px) and (max-width: 1024px) {
+	#menu #danh-muc {
+     display: none; 
+	}
+	#main-title{
+		width: 25%;
+	}
+	#menu{
+		width: 75%;
+		padding-top: 1%;
+	}
+	#menu ul li{
+		font-size: 11px;
+	}
+	.main-text2{
+		width: 90%;
+		padding-top: 10%;
+	}
+	.div-img,.content{
+		width: 100%;
+	}
+	.icon{
+		width: 52px;
+   		 line-height: 52px;
+   		 font-size: 25px;
+	}
+	.main-text1{
+		margin: 13% 0;
+	}
+	.medium-word{
+		font-size: 18px;
+	}
+	.title{
+		font-size: 24px;
+	}
+	.list-icon2{
+		padding-left: 4%;
+	}
+	.content-icon{
+		width: 70%;
+	}
+	.content-icon>.small-word {
+    padding-top: 6%;
+	}
+	.content{
+		margin-bottom: 10%;
+	}
+	#main-text3 .small-word{
+		padding: 5% 0;
+		font-size: 13px;
+	}
+	#text-border-radius span{
+		padding: 6px;
+		margin-left: -1%;
+	}
+	#text-border-radius{
+		padding-bottom: 12%;
+	}
+	.people{
+		width: 100%;
+		padding-bottom: 25%;
+	}
+	.name{
+		padding-top: 7%;
+		padding-bottom: 2%;
+	}
+	.col{
+		width: 100%;
+	}
+	.section{
+		margin-top: 7%;
+		margin-bottom: 9%;
+	}
+	#copyright{
+		font-size: 13px;
+	}
+	#menu2{
+		width:100%;
+		font-size: 12px;
+		padding-left: 38%;
+		padding-top: 1%;
+	}
+	.add-paddingtop{
+		padding-top: 15%;
+	}
+	.creative-solutions>p {
+   		 margin-bottom: 17%;
+	}
+	#nguon{
+		overflow: hidden;
+	}
+}
+/*kết thúc responsive cho tablet*/
+
+/*responsive cho laptop*/
+@media screen and (min-width: 1024px) {
+	#menu #danh-muc{
+		display: none;
+	}
+}

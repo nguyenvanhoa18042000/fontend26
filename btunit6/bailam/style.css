@@ -133,12 +133,14 @@
 	margin: 3% 0%;
 }
 /*kết thúc CSS cho main*/
+
 a{
 	text-decoration: none;
 }
 #title:hover, .weith-blue:hover,.name-selection:hover{
 	color: #f36e24;
 }
+
 /*tao border và hover cho icon*/
 .border-radius{
 	width: 35px;
