@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<p>When you submit the form, a function is triggered which alerts some text</p>
+	<form name="form_login" action="" onsubmit="myFunction()">
+		Enter your name : <input type="text" name="fname">
+		<input type="submit" name="" value="Submit">
+	</form>
+	<script type="text/javascript">
+		function myFunction() {
+			var input =document.getElementsByTagName('input');
+			alert(input[0].value);
+			//alert(document.form_login.fname.value)
+		}
+		
+	</script>
+
+</body>
+</html>
+
+<!-- Mai c lại di thi rồi. CHúc c tiếp đi.
+
+ -->

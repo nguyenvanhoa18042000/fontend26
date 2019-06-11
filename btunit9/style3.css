@@ -1,0 +1,12 @@
+#control-panel{
+	width: 30%;
+	height: auto;
+	border: 1px solid black;
+	padding:1%;
+}
+#content{
+	font-size: 15px;
+}
+#control-panel>input{
+	cursor: pointer;
+}
