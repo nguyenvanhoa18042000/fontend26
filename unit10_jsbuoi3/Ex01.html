@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ex01</title>
+	<link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body>
+	<form name="form" autocomplete="on">
+	<div id="background">
+		<div id="table">
+			<div class="row">
+				<div class="title">
+					<label for="name">Họ và tên:</label>
+				</div>
+				<div class="information">
+					<input onfocus="myFunction(0)" class="focus" id="name" type="text" name="" placeholder="Nhập họ tên...">
+				</div>
+				<div class="edit-error">
+					<span class="error"></span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="title" id="edit-paddingtop">
+					<label for="sex">Giới tính:</label>
+				</div>
+				<div class="information">
+					<div class="sex">
+						<input name="sex" type="radio">Nam
+					</div>
+					<div class="sex">
+						<input name="sex" type="radio">Nữ
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="title">
+					<label for="email">Email:</label>
+				</div>
+				<div class="information">
+					<input onfocus="myFunction(1)" class="focus" id="email" type="email" name="" placeholder="Nhập email...">
+				</div>
+				<div class="edit-error">
+					<span class="error"></span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="title">
+					<label for="phone_number">Số điện thoại:</label>
+				</div>
+				<div class="information">
+					<input onfocus="myFunction(2)" class="focus" type="tel" id="phone_number" name="phone_number" placeholder="Nhập số điện thoại...">
+				</div>
+				<div class="edit-error">
+					<span class="error"></span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="title">
+					<label for="pass">Mật khẩu:</label>
+				</div>
+				<div class="information">
+					<input onfocus="myFunction(3)" class="focus" type="password" name="pass" id="pass">
+				</div>
+				<div class="edit-error">
+					<span class="error"></span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="title">
+					<label for="check">Xác nhận mật khẩu:</label>
+				</div>
+				<div class="information">
+					<input onfocus="myFunction(4)" class="focus" type="password" id="check">
+				</div>
+				<div class="edit-error">
+					<span class="error"></span>
+				</div>
+			</div>
+		</div>
+		<div id="node">
+				<div id="button1">
+					<button  type="submit">Đăng Kí</button>
+				</div>
+				<div id="button2">
+					<button type="reset">Xóa trắng</button>
+				</div>
+			</div>
+	</div>
+	</form>
+</body>
+<script type="text/javascript" src="jsbai1.js"></script>
+</html>
