@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<style type="text/css">
+		.color-red{
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem veritatis doloribus soluta consequatur, nulla unde provident explicabo ipsum incidunt magnam.
+	</p>
+	<input type="button" id="add" value="Add Class" name="">
+	<input type="button" id="remove" value="Remove Class" name="">
+	<input type="button" id="toggle" value="Toggle Class" name="">
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#add').click(function(){
+				$('p').addClass('color-red');
+
+			});
+			$('#remove').click(function(){
+				$('p').removeClass('color-red');
+				
+			});
+			$('#toggle').click(function(){
+				$('p').toggleClass('color-red');
+				
+			});
+			$('#toggle').on('click',function(){//cách 2
+				$('p').toggleClass('color-red');
+				
+			});
+		});
+	</script>
+</body>
+</html>

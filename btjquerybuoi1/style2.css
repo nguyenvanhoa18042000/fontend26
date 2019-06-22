@@ -1,0 +1,71 @@
+*{
+	box-sizing: border-box;
+}
+#main{
+	width: 60%;
+	margin: 3% auto;
+	
+}
+#container{
+	overflow: hidden;
+	
+}
+#function{
+	width: 100%;
+	text-align: center;
+	overflow: hidden;
+    background-color: rgba(241, 18, 18, 0.78);
+}
+#function>div{
+	width:90%;
+	margin: 0 auto;
+}
+#title{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 1%;
+    margin-top: 5%;
+}
+#input{
+    width: 75%;
+    float: left;
+    border: none;
+    margin-bottom: 4%;
+    padding: 1% 0 1% 2%;
+    color: grey;
+    font-size: 16px;
+}
+#add{
+	width: 25%;
+	float: left;
+	border: none;
+	padding: 1%;
+	font-size: 16px;
+}
+.row{
+	width: 100%;
+	background-color: #efefeecc;
+
+}
+.content-add{
+	width:100%;
+	box-sizing: border-box;
+	color: black;
+	font-size: 20px;
+	padding: 1% 0 1% 0;
+}
+.delete{
+	text-align: center;
+	cursor: pointer;
+	font-size: 30px;
+    padding-right: 15px;
+}
+.checkbox{
+    width: 5%;
+    text-align: center;
+    font-size: 25px;
+}
+.add-background{
+	background-color:#dbdbd7;
+}

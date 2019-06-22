@@ -1,0 +1,77 @@
+#container{
+	width: 70%;
+	margin: 0 auto;
+	background-color: #000000f0;
+	color: white;
+}
+#main-content{
+	box-sizing: border-box;
+	padding: 4% 10%;
+}
+#content-logo{
+	margin:0;
+}
+#logo{
+	padding-left: 7%;
+}
+#akordeon{
+	font-size: 43px;
+}
+#vector{
+	color: #0fdd0f;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 1%;
+}
+#accordion{
+	margin: 0;
+	line-height: 20px;
+	overflow: hidden;
+	margin-bottom: 7%;
+}
+#accordion>div{
+	float: left;
+}
+#icon{
+	font-size: 45px;
+	color: #0fdd0f;
+}
+.tab{
+	clear: both;
+	border: 1px solid #0000008f;
+	margin-bottom: -1px;
+	border-radius: 5px;
+	background-color: #383131d1 !important;
+}
+#tab1,#tab2,#tab3,#tab4{
+	border-bottom: 1px solid #0000008f;
+	padding: 3% 0;
+	border-radius: 3px;
+	position: relative;
+}
+.button{
+	border: none;
+	background-color: #0fdd0f;
+	border-radius: 3px;
+	padding: 5px 14px;
+	font-size: 20px;
+	font-weight: bold;
+    color: #6b6262;
+    position: absolute;
+    left: -2%;
+    bottom: 22%;
+    cursor: pointer;
+}
+#tab1>span,#tab2>span,#tab3>span,#tab4>span{
+	font-family: Arial;
+	color: white;
+	font-weight:bold;
+	padding-left: 6%;
+}
+.content-tab{
+	display: none;
+	padding: 0 5%;
+}
+.green{
+	color: #0fdd0f !important;
+}

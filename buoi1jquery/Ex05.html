@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ex05</title>
+	<script type="text/javascript" src="../js/jquery.js"></script>
+</head>
+<body>
+	<p>Hello </p>
+	<div id="the_div"></div>
+	<input id="click" type="button" value="click" name="">
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#click').click(function(){
+				$('#the_div').append("<p id='thep'>the p vua thêm</p>")
+			});
+
+			$('#the_div').on('click','#thep',function(){
+				$('#thep').css('color','red');//this ở đây là chỉ thằng thep chứ không phải the_div
+			});
+		});
+	</script>
+</body>
+</html>

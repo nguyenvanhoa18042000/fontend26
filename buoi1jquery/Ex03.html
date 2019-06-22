@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="../js/jquery.js"></script>
+</head>
+<body>
+	<ul id="location">
+		<li>Hà Nội</li>
+		<li>Hải Phòng</li>
+		<li>Nam Định</li>
+	</ul>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#location').prepend("<li>Tp Hồ Chí Minh</li>");// chèn vào trước nd bên trong thẻ id location(trước li đầu tiên bên trong ul)
+			$('#location').append("<li>Nghệ An</li>");
+			$('#location').before("<p>hello</p>");// chèn nd vào trước thẻ có id location(trước ul)
+			$('#location').after("<p>bye bye</p>");
+		});
+	</script>
+</body>
+</html>

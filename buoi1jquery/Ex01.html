@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ex01</title>	
+	<script type="text/javascript" src="../js/jquery.js"></script>
+</head>
+<body>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, asperiores!
+	</p>
+	<p id="thep">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, ut?
+	</p>
+	<input type="text" name="" value="hello">
+	<script type="text/javascript">
+		$(document).ready(function(){
+			//alert('A');
+		// $('p').css("color","red");
+		//$('#thediv').css("color","green"); nếu viết tập hợp thì {'thuộc tính':'value','':''}
+		alert($('#thep').html());
+
+		alert($('input').val());
+		$('#thep').css({'color':'red','background-color':'yellow','font-size':'25px'})
+	});
+		// nên viết file riêng r link vào. tk script này phải đặt dưới link thư viện và đứng đầu so với link js khác
+	</script>
+	
+</body>
+</html>

@@ -14,7 +14,7 @@ function autoplay() {
   for (var i = 0; i < autoslide.length; i++) {
     autoslide[i].style.display = "none";  
   }
-  slide++;
+   slide++;
   if (slide > autoslide.length) {slide = 1}    
   autoslide[slide-1].style.display = "block"; 
   current(slide); 
