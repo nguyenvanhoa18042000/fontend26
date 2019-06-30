@@ -19,12 +19,12 @@ $(document).ready(function(){
 				},
 				password:{
 					required:true,
-					minlength:1
+					minlength:6
 				},
 				confirm:{
 					required:true,
 					equalTo:'#password',
-					minlength:1
+					minlength:6
 				}
 			},
 			messages: {
