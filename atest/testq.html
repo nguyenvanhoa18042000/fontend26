@@ -3,57 +3,141 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Lightbox</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <style>
-        .tab {
-            display: inline-block;
-            width: 100px;
-            padding: 10px;
-            /*background-color: yellow;*/
+        *{
+            margin: 0;
+            padding: 0;
         }
-        
-        .content {
-            position: absolute;
-            left: 0px;
-            padding: 20px;
-            background-color: orange;
+        .img {
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.5s;
+            width: 200px;
+            height: 200px;
+        }
+        .image{
+            display: inline-block;
+        }
+        .image img{
+            width: 250px;
+        }
+        .img:hover {
+            opacity: 0.7;
+        }
+        .modal {
             display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 100px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.9);
         }
-        
-        .section {
-            display: inline-block;
-        }
-        
-        .active > .tab {
-            background-color: yellow;
-        }
-        
-        .active> .content {
-            background-color: red;
+        .modal-content {
+            margin: auto;
             display: block;
-            z-index: 2000;
+            width: 100%;
+            max-width: 700px;
+        }
+        .caption {
+            margin: auto;
+            display: block;
+            width: 100%;
+            max-width: 700px;
+            text-align: center;
+            color: #ccc;
+            padding: 10px 0;
+            height: 150px;
+        }
+         .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .close:hover,
+        .close:focus {
+            color: orange;
+            text-decoration: none;
+            cursor: pointer;
+        }
+         .modal-content,
+        .caption {
+            -webkit-animation-name: zoom;
+            -webkit-animation-duration: 0.6s;
+            animation-name: zoom;
+            animation-duration: 0.6s;
+        }
+        @keyframes zoom {
+            from {
+                transform: scale(0)
+            }
+            to {
+                transform: scale(1.1)
+            }
+        }
+        .picture{
+            padding-top: 100px;
         }
     </style>
+    <script type="text/javascript" src="js/jqueryme.js"></script>
 </head>
 
-<body>
-    <div id="container active">
-        <div class="section active">
-            <div class="tab">Tab 1</div>
-            <div class="content"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, nisi 1! </div>
+<body><center>
+    <div class="picture">
+        <h4 style="font-size: 33px; text-align: center; color:#4E62FB;">Bộ ảnh chân dung chuẩn “Hàn xẻng” của nhiếp ảnh gia Đỗ Minh Ngọc</h4>
+        <div class="image">
+            <img id="myImg2" class="img" src="https://br-art.vn/wp-content/uploads/2019/05/bo-anh-chan-dung-chuan-han-xeng-cua-nhiep-anh-gia-do-minh-ngoc-11.jpg" alt="Bộ ảnh chân dung chuẩn “Hàn xẻng” của nhiếp ảnh gia Đỗ Minh Ngọc">
         </div>
-        <div class="section">
-            <div class="tab">Tab 2</div>
-            <div class="content"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, nisi 2! </div>
+
+         <div class="image">
+            <img id="myImg2" class="img" src="https://br-art.vn/wp-content/uploads/2019/05/bo-anh-chan-dung-chuan-han-xeng-cua-nhiep-anh-gia-do-minh-ngoc-8.jpg" alt="Bộ ảnh chân dung chuẩn “Hàn xẻng” của nhiếp ảnh gia Đỗ Minh Ngọc">
+         </div>
+
+          <div class="image">
+            <img id="myImg2" class="img" src="https://br-art.vn/wp-content/uploads/2019/05/bo-anh-chan-dung-chuan-han-xeng-cua-nhiep-anh-gia-do-minh-ngoc-5.jpg" alt="Bộ ảnh chân dung chuẩn “Hàn xẻng” của nhiếp ảnh gia Đỗ Minh Ngọc">
+          </div>
+
+        <div class="image">
+            <img id="myImg3" class="img" src="https://br-art.vn/wp-content/uploads/2019/05/bo-anh-chan-dung-chuan-han-xeng-cua-nhiep-anh-gia-do-minh-ngoc-3.jpg" alt="Bộ ảnh chân dung chuẩn “Hàn xẻng” của nhiếp ảnh gia Đỗ Minh Ngọc">
         </div>
-        <div class="section">
-            <div class="tab">Tab 3</div>
-            <div class="content"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, nisi 3! </div>
+
+        <div class="image">
+            <img id="myImg4" class="img" src="https://br-art.vn/wp-content/uploads/2019/05/bo-anh-chan-dung-chuan-han-xeng-cua-nhiep-anh-gia-do-minh-ngoc-2.jpg" alt="Bộ ảnh chân dung chuẩn “Hàn xẻng” của nhiếp ảnh gia Đỗ Minh Ngọc">
         </div>
     </div>
-    <script type="text/javascript">
-        var tabs = document.getElementsByClassName('tab'); // alert(tabs.length); 		for (var i = 0; i < tabs.length; i++) { 			tabs[i].addEventListener("click", function(){ 				var active= document.getElementsByClassName('active')[0]; 				active.className="section"; 				this.parentNode.className= "section active";  			}); 		}
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img src="" class="modal-content">
+        <div class="caption"></div>
+    </div>
+    <script>
+         $(function(){
+        var modal = $('#myModal');
+        var img = $('.img');
+        var modalImg = $(".modal-content");
+        var captionText = $(".caption");
+        
+        $('.img').click(function(){
+            var pic = $(this).attr('src');
+            $('#myModal').css({'display':'block'});
+            modalImg.attr('src',pic);
+            captionText.html(this.alt); 
+        }) ;
+        $(".close").click(function(){
+            $('#myModal').css({'display':'none'});
+        });
+    });
     </script>
+    </center>
 </body>
 
 </html>
