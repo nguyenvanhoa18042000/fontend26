@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ex02</title>
+	<style type="text/css">
+		.ancestors *{
+			display: block;
+			border: 3px solid gray;
+			color: gray;
+			margin: 15px;
+			padding: 15px;
+		}
+		/*do css để sao nếu để thẻ script ở dưới body n in ra cả jquery*/
+	</style>
+	<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('span').parents('ul').css({
+			'color':'red','border':'3px solid red'
+		})
+		$('ul').children('.li').css('color','red'); //có thể .children() nhiều lần hoặc các thằng khác nữa
+	});
+</script>
+</head>
+<body class="ancestors">
+	<div>div
+		<ul>ul
+			<li>li1
+				<span>span</span>
+			</li>
+			<li class="li">li2
+				
+			</li>
+		</ul>
+	</div>
+</body>
+
+
+</html>

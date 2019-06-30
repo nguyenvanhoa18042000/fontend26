@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ex04</title>
+	<script type="text/javascript" src="../js/jquery.js"></script>
+</head>
+<style type="text/css">
+	div{
+		background-color: red;
+		position: absolute;
+		left: 0;
+		width: 200px;
+		height: 200px;
+	}
+	button{
+		position: absolute;
+		top: 300px;
+		left: 0;
+	}
+</style>
+<body>
+	<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, at?</div>
+	<button id="btn">Animate</button>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#btn').click(function(){
+				$('div').animate({
+					left:'+250px',
+					'font-size':'+=10px'
+				});
+			});
+		});
+	</script>
+</body>
+</html>

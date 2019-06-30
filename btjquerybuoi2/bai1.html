@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bai1</title>
+	<link rel="stylesheet" type="text/css" href="style1.css">
+	
+</head>
+<body>
+	<div id="main">
+<!-- 		<h2 id="example">Advanced Form Example</h2> -->
+		<div class="tabs">
+			<form id="form1" name="form1" action="#">
+				<div class="steps">
+					<h3 id="step1" class="step12 step123 step124">1. Account</h3>
+				</div>
+				<div class="content-steps default">
+						<p>Account Information</p>
+						<label for="userName">User Name *</label>
+						<input type="text" name="userName" id="userName">
+						<label for="password">Password *</label>
+						<input type="password" name="password" id="password">
+						<label for="confirm">Confirm Password *</label>
+						<input type="password" name="confirm" id="confirm">
+						<p id="add-paddingbottom">(*) Mandatory</p>
+						<div class="button default">
+							<input type="submit" name="" value="Next" class="next" id="next-of-steps1">
+						</div>
+				</div>
+			</form>
+		</div>
+		<div class="tabs">
+			<form id="form2" name="form2" action="#">
+				<div class="steps">
+					<h3 id="step2" class="step12 step123 step124">2. Profile</h3>
+				</div>
+				<div class="content-steps">
+						<p>Profile Information</p>
+						<label for="firstName">First Name *</label>
+						<input type="text" name="firstname" id="firstname">
+						<label for="lastName">Last Name *</label>
+						<input type="text" name="lastname" id="lastName">
+						<label for="email">Email *</label>
+						<input type="email" name="email" id="email">
+						<label for="address">Address</label>
+						<input type="text" name="address" id="address">
+						<label for="age">Age (The warning step will show up if age is less than 18) *</label>
+						<input type="number" name="age" id="age">
+						<p>(*) Mandatory</p>
+						<div class="button">
+							<input type="button" name="" value="Previous" class="pre" id="pre-of-steps2">
+							<input type="submit" name="" value="Next" class="next" id="next-of-steps2">
+						</div>
+				</div>
+			</form>
+		</div>
+		<div class="tabs">
+			<form id="form3" name="form3" action="#">
+				<div class="steps">
+					<h3 class="step123" id="step3">3. Warning</h3>
+				</div>
+				<div class="content-steps">
+						<p>You are to young</p>
+						<p id="add-paddingbottom2">Please go away ;-)</p>
+						<div class="button">
+							<input type="button" name="" value="Previous" class="pre" id="pre-of-steps3">
+							<input type="submit" name="" value="Next" class="next" disabled="disabled" id="next-of-steps3">
+						</div>
+				</div>
+			</form>
+		</div>
+		<div class="tabs tab4">
+			<form id="form4" name="form4" action="#">
+				<div class="steps">
+					<h3 class="step124" id="step4">4. Finish</h3>
+				</div>
+				<div class="content-steps">
+						<p>Terms and Conditions</p>
+						<input type="checkbox" name="checkbox" id="checkbox"> I agree with the Terms and Conditions.
+						<div class="button">
+							<input type="button" name="" value="Previous" class="pre" id="pre-of-steps4">
+							<input type="submit" name="" value="Next" class="next" id="next-of-steps4">
+						</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="jsbai1.js"></script>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+</html>

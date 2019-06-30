@@ -1,0 +1,48 @@
+<form>
+	<div id="steps">
+		<button class="button">
+			<p class="title-button">1. Account</p>
+		</button>
+		<button class="button">
+			<p class="title-button">2. Profile</p>
+		</button>
+		<button class="button">
+			<p class="title-button">3. Warning</p>
+		</button>
+		<button class="button">
+			<p class="title-button">4. Finish</p>
+		</button>
+	</div>
+	<div class="content-steps">
+		<fieldset class="default">
+			<legend>Account Information</legend>
+			<label for="userName">User Name *</label>
+			<input type="text" name="" id="userName">
+			<label for="password">Password *</label>
+			<input type="password" name="" id="password">
+			<label for="confirm">Confirm Password *</label>
+			<input type="password" name="" id="confirm">
+			<p>(*) Mandatory</p>
+		</fieldset>
+		<fieldset>
+			<legend>Account Information</legend>
+			<label for="firstName">First Name *</label>
+			<input type="text" name="firstName" id="firstName">
+			<label for="lastName">Last Name *</label>
+			<input type="text" name="lastName" id="lastName">
+			<label for="email">Email *</label>
+			<input type="email" name="email" id="email">
+			<label for="address">Address *</label>
+			<input type="text" name="address" id="address">
+			<label for="age">Age (The warning step will show up if age is less than 18) *</label>
+			<input type="text" name="age" id="age">
+			<p>(*) Mandatory</p>
+		</fieldset>
+	</div>
+	<div class="actions">
+		<ul>
+			<li>Previous</li>
+			<li>Next</li>
+		</ul>
+	</div>
+</form>

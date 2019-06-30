@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ex03</title>
+	<script type="text/javascript" src="../js/jquery.js"></script>
+</head>
+<body>
+	<div style="width: 150px; height: 150px; background-color:yellow"></div>
+	<button id="hide">Hide</button>
+	<button id=show>Show</button>
+	<button id="toggle">toGlle</button>
+	<button id="slideToggle">slideToggle</button>
+	<script type="text/javascript">
+		$('#hide').click(function(){
+			$('div').hide();
+		});
+		$('#show').click(function(){
+			$('div').show();
+		});
+		$('#toggle').click(function(){
+			$('div').toggle();
+		})
+		$('#slideToggle').click(function(){
+			$('div').slideToggle('slow');
+		});
+	</script>
+</body>
+</html>

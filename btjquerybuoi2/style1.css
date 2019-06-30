@@ -1,0 +1,118 @@
+body{
+	background-color: #e3dada;
+}
+#main{
+	width: 90%;
+	margin: 0 auto;
+}
+#example{
+    font-family: Arial;
+    font-size: 35px;
+    margin-top: 0%;
+    font-weight: 500;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 1%;
+}
+.tabs{
+	width: 20%;
+	display:inline-block;
+}
+
+.title-button{
+	font-size: 16px;
+	margin: 0;
+}
+.content-steps>label{
+	display: block;
+}
+input{
+	width: 50%;
+    font-size: 19px;
+    border-radius: 9px;
+    border: 1px solid #cebebe;
+    margin: 1% 0;
+}
+.button{
+	position: absolute;
+	bottom: 5%;
+	width: 89%;
+	text-align: right;
+    color: #fff;
+    border: none;
+    padding: 0 0;
+    border-radius: 8px;
+}
+.button>input{
+	width: auto;
+	display: inline-block;
+    background: #2184be;
+	padding: 1%;
+	color: white;
+    cursor: pointer;
+}
+.content-steps{
+	position: absolute;
+	left: 5%;
+    background-color: #efeded;
+    width: 83%;
+	display: none;
+    border: 0;
+    padding: 0% 3% 10% 3%;
+    margin-top: 3%;
+}
+legend{
+    width: 100%;
+    font-size: 25px;
+    font-family: Arial;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-bottom: 1px solid #cac0c0;
+}
+.steps{
+	width: 90%;
+	overflow: hidden;
+}
+.steps>h3{
+   	display: inline-block;
+    border: 0;
+    width: 100%;
+    padding: 7% 0%;
+    background-color: #2184be7a;
+    border-radius: 8px;
+    color: white;
+    font-family: Arial;
+    margin: 0%;
+    text-align: center;
+    cursor: pointer;
+}
+.error{
+	display: inline-block !important;
+	color: red;
+	padding-left: 1%;
+}
+#form2 .content-steps{
+	padding-bottom: 7%;
+}
+#checkbox{
+	width: 2%;
+	margin-bottom: 30%;
+}
+#next-of-steps3{
+	background-color:#b39f9f; 
+}
+.content-steps>p:first-child{
+    padding-bottom: 1%;
+    font-size: 25px;
+    border-bottom: 1px solid #c0b1b1;
+}
+#add-paddingbottom{
+	padding-bottom: 9%;
+}
+#add-paddingbottom2{
+	padding-bottom: 27%;
+}
+label#checkbox-error{
+	position: absolute;
+	top: 25%;
+	left: 3%;
+}
