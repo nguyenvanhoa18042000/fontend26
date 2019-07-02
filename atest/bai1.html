@@ -2,21 +2,289 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Bailam</title>
-	<link rel="stylesheet" type="text/css" href="style1.css">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<style>
+		.header{
+			background-image: url(img/bg-masthead.jpg);
+			height: 580px;
+			background-size: cover;
+			color: #fff;
+		}
+		h1{
+			font-size: 60px;
+			font-weight: bold; 
+			color: white; 
+			padding-top: 50px; 
+			text-align: center;
+		}
+		.btn-link{
+			color: white;
+			font-weight: bold;
+		}
+		/*.btn-link*/.nav-item:hover{
+			color: #ff7300;
+		}
+		.navbar-nav{
+			margin-left: 60%;
+		}
+		.btn-primary{
+			border-radius: 50px;
+			font-weight: bold;
+			background-color: #fff;
+			color: #212529;
+			border: 0;
+			height: 50px;
+			padding-top: 13px;
+			width: 200px;
+		}
+		.div-02{
+			background-color: #ff7300;
+			height: 400px;
+			color: white;
+		}
+		.div-03{
+			background-color: #fff;
+			height: 430px;
+		}
+		.card-img-top{
+			width: 50px;
+			margin-left: 40%;
+		}
+		.card-block{
+			padding-top: 25px;
+			font-size: 20px;
+			font-weight: bold;
+		}
+		.card{
+			border: 0;
+			text-align: center;
+		}
+		.ctn{
+			margin-top: 50px;
+		}
+		.c4{
+			padding: 0;
+		}
+		.div-05{
+			height: 400px;
+			background-color: #212529;
+			color: white;
+			padding-top: 80px;
+		}
+		.div-06{
+			background-color: #fefefe;
+			height: 450px;
+		}
+		.nav-item{
+			float: right; 
+			display: inline-block;
+			right: 0
+		}
+		.bg-light{
+			background-color: #fff !important;
+		}
+		@media (min-width: 768px) and (max-width: 991px) {
+			.header{
+				height: 600px;
+			}
+			h1{
+				font-size: 50px;
+			}
+			h4{
+				font-size: 20px;
+			}
+			.div-03{
+				height: 650px;
+			}
+			.div-05{
+				height: 450px;
+			}
+		}
+		@media (max-width: 768px) {
+			.header{
+				height: 600px;
+			}
+			h1{
+				font-size: 40px;
+			}
+			h4{
+				font-size: 15px;
+			}
+			img{
+				width: 100%;
+			}
+			.div-03{
+				height: 850px;
+			}
+			.div-05{
+				height: 500px;
+			}
+		}
+		@media (max-width: 480px) {
+			.header{
+				height: 650px;
+			}
+			.div-03{
+				height: 960px;
+			}
+			.div-05{
+				height: 550px;
+			}
+		}
+		
+		.nav-item{
+			color: white;
+		}
+	</style>
 </head>
 <body>
-	<div class="btn">
-		<button>Hello</button>
+	<div class="header container-fluid">
+		<nav class="navbar navbar-expand-lg navbar-dark">
+			<a class="navbar-brand" href="#">BOOTSTRAP</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<div class="navbar-nav">
+					<a class="nav-item nav-link" href="#">ABOUT</a>
+					<a class="nav-item nav-link" href="#">SERVICES</a>
+					<a class="nav-item nav-link" href="#">PORTFOLIO</a>
+					<a class="nav-item nav-link" href="#">CONTACT</a>
+				</div>
+			</div>
+		</nav>
+
+		<!-- <nav class="navbar navbar-expand-lg ">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<a class="navbar-brand" href="#">BOOTSTRAP</a>
+			<div class="collapse navbar-collapse" id="" style="">
+				<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+					<li class="nav-item">
+						<a class="nav-link" href="#">ABOUT</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">SERVICES</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">PORTFOLIO</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">CONTACT</a>
+					</li>
+				</ul>
+			</div>
+		</nav> -->
+
+
+		<!-- <div class="header-menu row">
+			<div class="col-6">
+				<h3>BOOTSTRAP</h3>
+			</div>
+			<div class="col-6 row">
+				<button type="button" class="btn btn-link col-2"></button>
+				<button type="button" class="btn btn-link col-2">ABOUT</button>
+				<button type="button" class="btn btn-link col-2">SERVICES</button>
+				<button type="button" class="btn btn-link col-2">PORTFOLIO</button>
+				<button type="button" class="btn btn-link col-2">CONTACT</button>
+				<button type="button" class="btn btn-link col-2"></button>
+			</div>
+		</div>  -->
+		<div>
+			<div class="col-8 offset-2"><h1>YOUR FAVORITE SOURCE OF FREE BOOTSTRAP THEME</h1></div>
+			<hr style="width: 80px; height: 3px; background-color: #ff7300;">
+			<div class="col-lg-6 col-md-8 col-sm-10 offset-lg-3 offset-md-2 offset-sm-1"><h4 style="color: white; text-align: center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum itaque odio minima est sit quasi officiis veniam, dicta alias corrupti vel nisi.</h4></div>
+			<div class="col-lg-2 col-md-4 col-sm-6 offset-lg-5 offset-md-4 offset-sm-3"><center><button type="button" class="btn btn-warning" style="border-radius: 50px; border: 0; width: 180px; height: 50px; margin-top: 20px; font-weight: bold; font-size: 18px; background-color: #ff7300; color: #fff;">FIND OUT MORE</button></center></div>
+		</div>
 	</div>
-	<div class="bg">
+
+	<div class="div-02 container-fluid">
+		<div class="col-8 offset-2"><h2 style="padding-top: 90px; font-weight: bold; text-align: center;">WE'VE GOT WHAT YOU NEED!</h2></div>
+		<hr style="width: 80px; height: 3px; background-color: #fff;">
+		<div class="col-lg-6 col-md-8 col-sm-10 offset-lg-3 offset-md-2 offset-sm-1"><h4 style="color: white; text-align: center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum itaque odio minima est sias corrupti vel nisi.</h4></div>
+		<div class="col-lg-2 col-md-4 col-sm-6 offset-lg-5 offset-md-4 offset-sm-3"><center><button type="button" class="btn btn-warning" style="border-radius: 50px; border: 0; width: 150px; height: 50px; margin-top: 20px; font-weight: bold; font-size: 18px; background-color: #fff; color: #ff7300;">GET STARTED</button></center></div>
+	</div>
+
+	<div class="div-03 container-fluid">
+		<div class="col-8 offset-2"><h2 style="padding-top: 90px; font-weight: bold; text-align: center;">AT YOUR SERVICE</h2></div>
+		<hr style="width: 80px; height: 3px; background-color: #ff7300;">
+		
+		<div class="row ctn col-10 offset-1">
+			<div class="col-lg-3 col-md-6 col-sm-12">
+				<div class="card">
+					<img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOi1qfUaWDOMqc5fZM0U2QwhPF7l78Y-OhMe0Y7orBj4hlEq8u" alt="Card image cap">
+					<div class="card-block"> STUDY TEMPLATES</div>
+					<div><h6>Lorem ipsum dolocing elit. Quibusdam, autem, repudiandae.</h6></div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-12">
+				<div class="card">
+					<img class="card-img-top" src="https://developer.apple.com/design/human-interface-guidelines/watchos/images/icon-and-image-large-icon-timer_2x.png" alt="Card image cap">
+					<div class="card-block"> READY TO SHIP </div>
+					<div><h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusde.</h6></div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-12">
+				<div class="card">
+					<img class="card-img-top" src="https://toha.com.vn/wp-content/uploads/2018/08/icon.png" alt="Card image cap">
+					<div class="card-block"> UP TO DATE </div>
+					<div><h6> sit amet, consectetur adipisicing elit. Quibusdam, autem, repudiandae.</h6></div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-12">
+				<div class="card">
+					<img class="card-img-top" src="http://www.ask.lv/wp-content/uploads/2017/02/iTek-Icons-Quality-Control-1-1024x1024.png" alt="Card image cap">
+					<div class="card-block"> MADE WITH LOVE </div>
+					<div><h6>Lorem ipsum do consectetur adipisicing elit. Quibusdam, autem, repudiandae.</h6></div>
+				</div>
+			</div>
+		</div>
 		
 	</div>
-	<div class="content">
-		<button>&times;</button>
-		<img src="images/img3.jpg">
+
+	<div class="div-04 row">
+		<div class="col-lg-4 c4 col-md-6 col-sm-12"><img src="img/4.jpg" class="img-fluid" alt="Responsive image"></div>
+		<div class="col-lg-4 c4 col-md-6 col-sm-12"><img src="img/1.jpg" class="img-fluid" alt="Responsive image"></div>
+		<div class="col-lg-4 c4 col-md-6 col-sm-12"><img src="img/2.jpg" class="img-fluid" alt="Responsive image"></div>
+		<div class="col-lg-4 c4 col-md-6 col-sm-12"><img src="img/3.jpg" class="img-fluid" alt="Responsive image"></div>
+		<div class="col-lg-4 c4 col-md-6 col-sm-12"><img src="img/5.jpg" class="img-fluid" alt="Responsive image"></div>
+		<div class="col-lg-4 c4 col-md-6 col-sm-12"><img src="img/6.jpg" class="img-fluid" alt="Responsive image"></div>
+	</div>
+
+	<div class="div-05">
+		<center>
+			<div class="card-body">
+				<h1 class="card-title" style="font-weight: bold; font-size: 45px">FREE DOWNLOAD AT START BOOTSTRAP</h1>
+				<a href="#" class="btn btn-primary">DOWNLOAD NOW!</a>
+			</div>
+		</center>
+	</div>
+
+	<div class="div-06">
+		<div class="col-8 offset-2"><h2 style="padding-top: 90px; font-weight: bold; text-align: center;">LET'S GET IN TOUCH!</h2></div>
+		<hr style="width: 80px; height: 3px; background-color: #ff7300;">
+		<div class="col-lg-6 col-md-8 col-sm-10 offset-lg-3 offset-md-2 offset-sm-1"><h4 style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum itaque odio minima est sias corrupti vel nisi.</h4></div>
+		<div class="row col-6 offset-3" style="padding-top: 50px;">
+			<div class="col-lg-6 col-md-12">
+				<div class="card">
+					<img class="card-img-top" src="https://www.seekpng.com/png/small/95-953439_icon-email-orange-white-oak-swimming-club.png" alt="Card image cap">
+					<div class="card-block"> E-mail </div>
+					<div><h6>trinhvanson200798@gmail.com</h6></div>
+				</div>
+			</div>
+			<div class="col-lg-6 col-md-12">
+				<div class="card">
+					<img class="card-img-top" src="https://cdn.imgbin.com/6/11/3/imgbin-mobile-phones-telephone-computer-icons-email-email-nt8mTKDECsQ2tzWNJ0mawhYy2.jpg" alt="Card image cap">
+					<div class="card-block"> Phone </div>
+					<div><h6> 0123.456.789</h6></div>
+				</div>
+			</div>
+		</div>
 	</div>
 </body>
-<script type="text/javascript" src="../js/jquery.js"></script>
-<script type="text/javascript" src="js1.js"></script>
 </html>

@@ -1,0 +1,149 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+#bg-menu{
+	background-color: white;
+}
+.menu a{
+    font-weight: bold;
+    color: black;
+    font-size: 14px;
+}
+.menu a:hover{
+	color: #f5422bf0;
+}
+#category{
+    color: gray;
+    border: 1px solid gray;
+    padding: 5% 20%;
+    border-radius: 5px;
+}
+.bg-header{
+background-image: url('images/bgheader.jpg');
+padding: 1% 0 10% 0;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.main-title h2{
+	font-size: 40px;
+	color: white;
+	margin-top: 15%;
+}
+.main-title hr,.footer hr{
+	margin: 4% auto;
+}
+.main-title p{
+	padding: 0 4%;
+    color: white;
+}
+.main-title button{
+    background-color: #ff0000e0;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 2%;
+    border-radius: 23px;
+}
+.main-title button:hover{
+	border: 2px solid #ff0000e0;
+	color: #ff0000e0;
+	background-color: white;
+}
+.start{
+	background-color: #f5422bf0;
+	padding-top: 6%;
+	padding-bottom: 4%;
+}
+.start h3 {
+	color: white;
+}
+.sevcive i{
+	font-size: 40px;
+	color: #f5422bf0;
+}
+h3{
+	font-weight: normal;
+}
+.sevcive h3{
+	font-size: 22px;
+}
+.padding-sevcive,.padding-footer{
+	padding-top:6%;
+	padding-bottom: 6%;
+}
+.album-img img{
+	padding: 0;
+    border-right: 1px solid #ddd3d3;
+    border-bottom: 1px solid #ddd3d3;
+}
+.download{
+	background-color: #0b0a0ad6;
+	padding: 7% 0;
+}
+.footer p{
+	color: #443c3c;
+	padding: 0 2%;
+}
+.address{
+	padding-left: 9%;
+}
+.address i{
+	font-size: 30px;
+}
+@media (max-width: 576px){
+	.branch{
+		color: #ff2300 !important;
+	}
+	.download,.start{
+		padding: 20% 0;
+	}
+	.padding-footer,.padding-sevcive{
+		padding-top: 15%;
+		padding-bottom: 15%;
+	}
+	.sevcive p{
+		margin-bottom: 10%;
+	}
+	.bg-header{
+		padding: 10% 0 20% 0;
+	}
+	.address{
+		padding: 0;
+		margin: 0 auto;
+	}
+
+}
+@media screen and (min-width: 576px) and (max-width: 991px) {
+	.branch{
+		color: #ff2300 !important;
+	}
+	.start{
+		padding: 10% 0;
+	}
+	.sevcive i{
+		font-size: 60px;
+	}
+	.sevcive p{
+		margin-bottom: 15%;
+	}
+	.download{
+		padding: 13% 0;
+	}
+	.address{
+		padding: 0;
+		margin: 0 auto;
+	}
+}
+@media (min-width: 991px){
+	#bg-menu{
+	background-color: black;
+	}
+	.menu a{
+		color: white;
+	}
+	.address{
+		padding-top: 1%;
+	}
+}

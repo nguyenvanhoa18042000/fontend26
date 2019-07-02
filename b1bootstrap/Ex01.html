@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ex02</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript" src="bootstrap.min.js"></script>
+	<style type="text/css">
+		@media screen and (max-width: 576px){
+			div{
+				color:white;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<!-- container-fluid la full mh -->
+		<div class="row">
+			<!-- trong row nay se la 12 cot -->
+			<!-- <div class="col-12 col-sm-6 col-lg-8 col-xl-8" style="background-color: blue">
+				Lorem ipsum dolor sit amet.
+			</div>
+			<div class="col-12 col-sm-6 col-lg-4 col-xl-4" style="background-color: red">
+				Lorem ipsum dolor sit amet.
+			</div> -->
+			<!-- nếu mk chỉ muốn n chiếm 3 cột r xuống dòng thì thằng bao n là col-3 còn thằng nd đó col-12 -->
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div style="background-color: red" class="col-md-8 offset-md-2">
+				<!-- khi muốn n chiếm 8 và 2 bên mỗi khoảng chiếm 2 như margin auto nd n sẽ ra giữa -->
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat eos, molestias voluptatum ad mollitia dicta magnam est esse, aliquam reiciendis?
+			</div>
+		</div>
+	</div>
+</body>
+</html>
