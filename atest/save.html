@@ -2,127 +2,141 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>bai1</title>
-	<link rel="stylesheet" type="text/css" href="style1.css">
+	<title>Document</title>
+	
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style3.css">
 </head>
 <body>
-	<div id="main">
-		<div id="header">
-			<div id="jquery">JQuery Steps</div>
-			<div id="container-menu">
-				<ul>
-					<li><a href="#">Getting Started</a></li>
-					<li><a href="#">Examples</a></li>
-					<li><a href="#">Documentation</a></li>
-					<li><a href="#">Bootgrid<span id="new">New</span></a></li>
-					<li><a href="#">Blog</a></li>
-					<li><a href="#">Github</a></li>
-					<li><a href="#">About</a></li>
-				</ul>
-			</div>
-		</div>
-		<div id="content">
-			<div id="sidebar-left">
-				<ul>
-					<li><a href="#">Basic Example</a></li>
-					<li><a href="#">Basic Form Example</a></li>
-					<li><a href="#">Advanced Form Example</a></li>
-					<li><a href="#">Dynamic Malipulation Example</a></li>
-					<li><a href="#">Tabs Example</a></li>
-					<li><a href="#">Vertical Steps Example</a></li>
-					<li><a href="#">Async Content Loading Exampke</a></li>
-					<li><a href="#">Embedded Content Example</a></li>
-				</ul>
-			</div>
-			<div id="main">
-				<h2 id="example">Advanced Form Example</h2>
-				<div class="tabs">
-					<form class="form form1" name="form" action="#">
-						<div class="steps">
-							<h3>1. Account</h3>
-						</div>
-						<div class="content-steps default">
-							<fieldset class="default">
-								<legend>Account Information</legend>
-								<label for="userName">User Name *</label>
-								<input type="text" name="" id="userName">
-								<label for="password">Password *</label>
-								<input type="password" name="" id="password">
-								<label for="confirm">Confirm Password *</label>
-								<input type="password" name="" id="confirm">
-								<p>(*) Mandatory</p>
-							</fieldset>
-						</div>
-						<div class="button default">
-							<input type="submit" name="" value="Next" class="next" id="next-of-steps1">
-						</div>
-					</form>
-				</div>
-				<div class="tabs">
-					<form class="form" name="form" action="#">
-						<div class="steps">
-							<h3>2. Profile</h3>
-						</div>
-						<div class="content-steps">
-							<fieldset>
-								<legend>Profile Information</legend>
-								<label for="firstName">First Name *</label>
-								<input type="text" name="firstname" id="firstname">
-								<label for="lastName">Last Name *</label>
-								<input type="text" name="lastname" id="lastName">
-								<label for="email">Email *</label>
-								<input type="email" name="email" id="email">
-								<label for="address">Address</label>
-								<input type="text" name="address" id="address">
-								<label for="age">Age (The warning step will show up if age is less than 18) *</label>
-								<input type="text" name="age" id="age">
-								<p>(*) Mandatory</p>
-							</fieldset>
-						</div>
-						<div class="button">
-							<input type="button" name="" value="Previous" class="pre" id="next-of-steps2">
-							<input type="submit" name="" value="Next" class="next" id="next-of-steps2">
-						</div>
-					</form>
-				</div>
-				<div class="tabs">
-					<form class="form" name="form" action="#">
-						<div class="steps">
-							<h3>3. Warning</h3>
-						</div>
-						<div class="content-steps">
-							<fieldset>
-								<legend>You are to young</legend>
-								<p>Please go away ;-)</p>
-							</fieldset>
-						</div>
-						<div class="button">
-							<input type="button" name="" value="Previous" class="pre" id="next-of-steps3">
-							<input type="submit" name="" value="Next" class="next" id="next-of-steps3">
-						</div>
-					</form>
-				</div>
-				<div class="tabs">
-					<form class="form" name="form" action="#">
-						<div class="steps">
-							<h3>4. Finish</h3>
-						</div>
-						<div class="content-steps">
-							<fieldset>
-								<legend>Terms and Conditions</legend>
-								<input type="checkbox" name="checkbox"> I agree with the Terms and Conditions.
-							</fieldset>
-						</div>
-						<div class="button">
-							<input type="button" name="" value="Previous" class="pre" id="next-of-steps4">
-							<input type="submit" name="" value="Next" class="next" id="next-of-steps4">
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
+	<div class="content col-12 mt-3">
+				<div class="col-3 content-image">
+			  		<img src="images/nha1.jpg" class="hinh all type4 type6">
+			  		<div>
+			  			<div class="info-img">
+			  				<p>Đà Nẵng</p>
+			  				<div class="show-info-img">
+			  					<p>Hạng cao cấp</p>
+			  					<p>Đặt tiền trước: 26/09/2019</p>
+			  					<p>Gía nhà: 
+			  						<span>500.000$</span>
+			  					</p>
+			  				</div>
+			  				<button class="button-detail">Detail</button>
+			  			</div>
+			  		</div>
+			  	</div>
+			  	<!-- <div class="content-image col-3">
+			   		<img src="images/nha2.jpg" class="hinh all type2 type6 type5">
+			   		<div>
+			  			<div class="info-img">
+			  				<p>Đà Nẵng</p>
+			  				<div class="show-info-img">
+			  					<p>Hạng cao cấp</p>
+			  					<p>Đặt tiền trước: 26/09/2019</p>
+			  					<p>Gía nhà: 
+			  						<span>500.000$</span>
+			  					</p>
+			  				</div>
+			  				<button class="button-detail">Detail</button>
+			  			</div>
+			  		</div>
+			  	</div>
+			  	<div class="content-image col-3">
+			   		<img src="images/nha3.jpg" class="hinh all type1 type3 type4 type5">
+			   		<div>
+			  			<div class="info-img">
+			  				<p>Đà Nẵng</p>
+			  				<div class="show-info-img">
+			  					<p>Hạng cao cấp</p>
+			  					<p>Đặt tiền trước: 26/09/2019</p>
+			  					<p>Gía nhà: 
+			  						<span>500.000$</span>
+			  					</p>
+			  				</div>
+			  				<button class="button-detail">Detail</button>
+			  			</div>
+			  		</div>
+			  	</div>
+			  	<div class="content-image col-3">
+			  		<img src="images/nha4.jpg" class="hinh all type1 type4 type6">
+			  		<div>
+			  			<div class="info-img">
+			  				<p>Đà Nẵng</p>
+			  				<div class="show-info-img">
+			  					<p>Hạng cao cấp</p>
+			  					<p>Đặt tiền trước: 26/09/2019</p>
+			  					<p>Gía nhà: 
+			  						<span>500.000$</span>
+			  					</p>
+			  				</div>
+			  				<button class="button-detail">Detail</button>
+			  			</div>
+			  		</div>
+			  	</div>
+				<div class="content-image col-3">
+			    	<img src="images/nha5.jpg" class="hinh all type3 type5 type6">
+			    	<div>
+			  			<div class="info-img">
+			  				<p>Đà Nẵng</p>
+			  				<div class="show-info-img">
+			  					<p>Hạng cao cấp</p>
+			  					<p>Đặt tiền trước: 26/09/2019</p>
+			  					<p>Gía nhà: 
+			  						<span>500.000$</span>
+			  					</p>
+			  				</div>
+			  				<button class="button-detail">Detail</button>
+			  			</div>
+			  		</div>
+			  	</div>
+			  	<div class="content-image col-3">
+			    	<img src="images/nha6.jpg" class="hinh all type1 type2 type3 type5">
+			    	<div>
+			  			<div class="info-img">
+			  				<p>Đà Nẵng</p>
+			  				<div class="show-info-img">
+			  					<p>Hạng cao cấp</p>
+			  					<p>Đặt tiền trước: 26/09/2019</p>
+			  					<p>Gía nhà: 
+			  						<span>500.000$</span>
+			  					</p>
+			  				</div>
+			  				<button class="button-detail">Detail</button>
+			  			</div>
+			  		</div>
+			  	</div>
+			  	<div class="content-image col-3">
+			    	<img src="images/nha7.jpg" class="hinh all type1 type3 type5">
+			    	<div>
+			  			<div class="info-img">
+			  				<p>Đà Nẵng</p>
+			  				<div class="show-info-img">
+			  					<p>Hạng cao cấp</p>
+			  					<p>Đặt tiền trước: 26/09/2019</p>
+			  					<p>Gía nhà: 
+			  						<span>500.000$</span>
+			  					</p>
+			  				</div>
+			  				<button class="button-detail">Detail</button>
+			  			</div>
+			  		</div>
+			  	</div>
+				<div class="content-image col-3">
+			    	<img src="images/nha8.jpg" class="hinh all type1 type3 type5">
+			    	<div>
+			  			<div class="info-img">
+			  				<p>Đà Nẵng</p>
+			  				<div class="show-info-img">
+			  					<p>Hạng cao cấp</p>
+			  					<p>Đặt tiền trước: 26/09/2019</p>
+			  					<p>Gía nhà: 
+			  						<span>500.000$</span>
+			  					</p>
+			  				</div>
+			  				<button class="button-detail">Detail</button>
+			  			</div>
+			  		</div>
+			  	</div> -->
 	</div>
 </body>
-<script type="text/javascript" src="../js/jquery.js"></script>
-<script type="text/javascript" src="jsbai1.js"></script>
 </html>
