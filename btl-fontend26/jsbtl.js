@@ -1,10 +1,16 @@
 $(document).ready(function() {
+
+
+	$.simpleTicker($("#news-ticker-roll"),{
+		delay : 2000,
+		effectType : 'roll'
+	});
 	$('.counter').counterUp({
 		delay: 15,
 		time: 1500
 	});
 	$('.carousel').carousel({
-  		interval: 2500
+		interval: 2500
 	});
 	$('#say').owlCarousel({
 		loop:true,
@@ -49,12 +55,8 @@ $(document).ready(function() {
 	});
 
 	$('.edit-js-btn').click(function(){
-		$('.add-bg-yellow').css('background-color','white');
-		$('.add-bg-yellow').children().css('color','black');
-		$('.add-bg-yellow').find('button').css({'color':'black','font-weight':'normal'});
-		$(this).css({'color':'white','font-weight':'bold','text-decoration':'none'});
-		$(this).parents('.card-header').css('background-color','#FEC924');
-		$(this).parent().siblings().css('color','white');
+		$('.card-header').removeClass('default');
+		$(this).parents('.card-header').addClass('default');
 	});
 	var swiper = new Swiper('.swiper-container', {
 		slidesPerView: 4,
@@ -67,26 +69,16 @@ $(document).ready(function() {
 			prevEl: '.swiper-button-prev',
 		},
 	});
-	$('.content').isotope({
-		itemSelector: 'img'
-	});
-	$('.content').isotope({
-		itemSelector: 'img'
+	$('.container-images').isotope({
+		itemSelector: '.box',
+		layoutMode: 'fitRows'
 	});
 	$('.menu2 li').click(function() {
-		$('.menu2 li').css({
-			'background':'#f9f6f6',
-			'color':'black',
-			'font-weight':'normal'
-		});
-		$(this).css({
-			'background':'#ffa500c2',
-			'color':'white',
-			'font-weight':'bold'
-		});
+		$('.menu2 li').removeClass('default-li');
+		$(this).addClass('default-li');
 		var type = $(this).attr('type');
 		type = '.'+type;
-		$('.content').isotope({
+		$('.container-images').isotope({
 			filter:type      
 		});
 	});
@@ -123,20 +115,13 @@ $(document).ready(function() {
 				},
 			},	
 		});
-		// var check2 = $('#message').val();
-		// alert(check2);
-		// if (check2=="") {
-		// 	alert('abc');
-		// }else{
-		// 	//alert('acb');
-		// }
 	});
 	$('.input input').click(function(){
 		$(this).blur(function(){
 			var check =$(this).val();
 			if (check!="") {
 				$(this).css('border','2px solid #007bff');
-				$(this).next().addClass('after-click');
+				$(this).siblings('.title-of-input').addClass('after-click');
 			}
 		});
 	});
