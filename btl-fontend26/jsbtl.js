@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-
+	$('body').scrollspy({ target:'.navbar'});
 	$.simpleTicker($("#news-ticker-roll"),{
 		delay : 2000,
 		effectType : 'roll'
@@ -48,7 +48,10 @@ $(document).ready(function() {
 	    	300:{
 	    		items:2,
 	    	},
-	    	1000:{
+	    	600:{
+	    		items:3,
+	    	},
+	    	992:{
 	    		items:4,
 	    	},
 	    }
@@ -116,6 +119,7 @@ $(document).ready(function() {
 			},	
 		});
 	});
+
 	$('.input input').click(function(){
 		$(this).blur(function(){
 			var check =$(this).val();

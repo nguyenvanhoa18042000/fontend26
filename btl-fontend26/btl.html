@@ -4,18 +4,17 @@
 	<meta charset="UTF-8">
 	<title>ZentGroup</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-	
-	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="thuvien/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="fontawesome5.9/css/all.min.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="animate.css">
+	<link rel="stylesheet" type="text/css" href="thuvien/animate.css">
 	<link rel="stylesheet" href="owlcarousel/dist/assets/owl.carousel.min.css">
 	<link rel="stylesheet" href="owlcarousel/dist/assets/owl.theme.default.min.css">
-	<link rel="stylesheet" type="text/css" href="swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="thuvien/swiper.min.css">
 	<link rel="stylesheet" type="text/css" href="thuvien/jquery.simpleTicker.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 	<div class="container-fluid sticky-top bg-menu">
 		<nav class="navbar navbar-expand-lg ">
 			<div class="container-fluid menu">
@@ -26,32 +25,32 @@
 					<i id="category" class="fa fa-bars" aria-hidden="true"></i>
 				</button>
 				<div class="pt-2 collapse navbar-collapse justify-content-end" id="navbarResponsive">
-					<ul class="navbar-nav">
+					<ul class="navbar-nav" id="edit-navbar">
 						<li class="nav-item">
-							<a href="#" class="nav-link">HOME</a>
+							<a href="#home" class="nav-link">HOME</a>
 						</li>
 						<li class="nav-item">
-							<a href="#a" class="nav-link">ABOUT</a>
+							<a href="#about" class="nav-link">ABOUT</a>
 						</li>
 						<li class="nav-item">
-							<a href="#" class="nav-link">FOLIO</a>
+							<a href="#folio" class="nav-link">FOLIO</a>
 						</li>
 						<li class="nav-item">
-							<a href="#" class="nav-link">FEATURES</a>
+							<a href="#features" class="nav-link">FEATURES</a>
 						</li>
 						<li class="nav-item">
-							<a href="#" class="nav-link">TESTIMONAILS</a>
+							<a href="#testimonails" class="nav-link">TESTIMONAILS</a>
 						</li>
 						<li class="nav-item">
-							<a href="#" class="nav-link">WHY US</a>
+							<a href="#why-us" class="nav-link">WHY US</a>
 						</li>
 						<li class="nav-item">
-							<a href="#" class="nav-link">CONTACT</a>
+							<a href="#link-contact" class="nav-link">CONTACT</a>
 						</li>
 						<li class="nav-item">
 							<a href="#" class="nav-link">
 								<i class="fa fa-shopping-cart" aria-hidden="true">
-									<span class="badge badge-secondary">3</span>
+									<span class="badge badge-3">3</span>
 								</i>
 							</a>
 						</li>
@@ -60,7 +59,7 @@
 			</div>
 		</nav>
 	</div>
-	<div class="container-fluid bg-design text-center">
+	<div class="container-fluid bg-design text-center" id="home">
 		<div id="carouselExampleIndicators" class="carousel slide my-slide">
 			<div class="carousel-inner album-slide">
 				<div class="carousel-item active">
@@ -88,7 +87,7 @@
 				<i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
 			</button>
 			<div class="load">
-				<a href="#testna">
+				<a href="#go-construction">
 					<div class="loader"></div>
 					<div class="icon-load"><i class="fa fa-angle-down" aria-hidden="true"></i>
 					</div>
@@ -96,13 +95,13 @@
 			</div>
 		</div>
 	</div>
-	<div class="container-fluid construction text-center" id="testna">
+	<div class="container-fluid construction text-center" id="go-construction">
 		<h2 class="title">CONSTRUCTION</h2>
 		<hr class="hr">
 		<p class="col-12 col-md-12 col-sm-12 col-lg-8 offset-lg-2 col-xl-8 offset-xl-2 sub-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Phasellus sit amet iaculis elit. Nam semper ut arcu non placerat. Praesent nibh massavarius consectetur</p>
 		<div class="row card-construction">
 			<div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
-				<div class="card delete-border">
+				<div class="card delete-border wow bounceInLeft" data-wow-delay="0.2s">
 					<div class="col-12  container-card-img col-sm-8 col-md-8 offset-sm-2 offset-md-2 col-lg-12 offset-lg-0 col-xl-12 offset-xl-0">
 						<img class="card-img-top" src="images/construction1.jpg" alt="Card image cap">
 					</div>
@@ -116,7 +115,7 @@
 				</div>
 			</div>
 			<div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
-				<div class="card delete-border">
+				<div class="card delete-border wow bounceInUp" data-wow-delay="0.2s">
 					<div class="container-card-img col-sm-8 col-md-8 offset-sm-2 offset-md-2 col-lg-12 offset-lg-0 col-xl-12 offset-xl-0">
 						<img class="card-img-top" src="images/construction2.jpg" alt="Card image cap">
 					</div>
@@ -130,7 +129,7 @@
 				</div>
 			</div>
 			<div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
-				<div class="card delete-border">
+				<div class="card delete-border wow bounceInRight" data-wow-delay="0.2s">
 					<div class="container-card-img col-sm-8 col-md-8 offset-sm-2 offset-md-2 col-lg-12 offset-lg-0 col-xl-12 offset-xl-0">
 						<img class="card-img-top" src="images/construction3.jpg" alt="Card image cap">
 					</div>
@@ -145,7 +144,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="container-fluid about-us text-center" id="about">
+	<div class="container-fluid about-us text-center wow zoomInDown" data-wow-delay="0.5s" id="about">
 		<h2 class="title">ABOUT US</h2>
 		<hr class="hr">
 		<p class="col-md-12 col-sm-12 sub-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Phasellus sit amet iaculis elit. Nam semper ut arcu non placerat. Praesent nibh massavarius consectetur</p>
@@ -153,7 +152,7 @@
 			<img class="col-md-10 offset-md-1" src="images/about.jpg">
 		</div>
 	</div>
-	<div class="container-fluid bg-count">
+	<div class="container-fluid bg-count" id="">
 		<div class="container">
 			<div class="row text-center count">
 				<div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
@@ -175,7 +174,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="container-fluid text-center recent-works">
+	<div class="container-fluid text-center recent-works" id="folio">
 		<h2 class="title">RECENT WORKS</h2>
 		<hr class="hr mb-4">
 		<div class="row">
@@ -290,33 +289,33 @@
 			</div>
 		</div>
 	</div>
-	<div class="container-fluid text-center padding-offer">
+	<div class="container-fluid text-center padding-offer" id="features">
 		<h2 class="title">WHAT WE OFFER</h2>
 		<hr class="hr">
 		<p class="col-md-12 col-sm-12 sub-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Phasellus sit amet iaculis elit. Nam semper ut arcu non placerat. Praesent nibh massavarius consectetur</p>
 		<div class="container">
 			<div class="row offer mt-5">
-				<div class="delete-margin-top  delete-margin-left">
+				<div class="delete-margin-top  delete-margin-left wow bounceInUp" data-wow-delay=".1s">
 					<p><i class="fas fa-hard-hat"></i></p>
 					<p>CONSTRUCTION</p>
 				</div>
-				<div class="lan-son">
+				<div class="lan-son wow bounceInUp" data-wow-delay=".2s">
 					<p><i class="fas fa-paint-roller"></i></p>
 					<p>RENOVATION</p>
 				</div>
-				<div class="bua">
+				<div class="bua wow bounceInUp" data-wow-delay=".3s">
 					<p><i class="fas fa-hammer"></i></p>
 					<p>CONSULTING</p>
 				</div>
-				<div class="">
+				<div class="wow bounceInUp" data-wow-delay=".4s">
 					<p><i class="fas fa-truck-monster"></i></p>
 					<p>CONSTRUCT</p>
 				</div>
-				<div class="">
+				<div class="wow bounceInUp" data-wow-delay=".5s">
 					<p><i class="fas fa-tools"></i></p>
 					<p>ARCHITECTURE</p>
 				</div>
-				<div class="delete-margin-right">
+				<div class="delete-margin-right wow bounceInUp" data-wow-delay=".6s">
 					<p><i class="fas fa-lightbulb"></i></p>
 					<p>ELECTRICAL</p>
 				</div>
@@ -325,7 +324,7 @@
 	</div>
 	<div class="container-fluid padding-of-material">
 		<div class="row edit-width-pc">
-			<div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4  margin-of-material">
+			<div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4  margin-of-material wow bounceInLeft" data-wow-delay=".2s">
 				<div class="row material">
 					<div class="col-3 col-sm-2 col-md-2  text-center col-xl-3 col-lg-3">
 						<i class="fa fa-snowflake-o" aria-hidden="true"></i>
@@ -335,7 +334,7 @@
 						<p>Vestibulum eu libero volutpat, potas quam tempus sem. Donec sodales quam id lorem lobortis, vitae interdum nisl</p>
 					</div>
 				</div>
-				<div class="row material">
+				<div class="row material" >
 					<div class="col-3 col-sm-2 col-md-2  text-center col-lg-3 col-xl-3">
 						<i class="fa fa-anchor" aria-hidden="true"></i>
 					</div>
@@ -345,7 +344,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 margin-of-material" id="edit-margin-material">
+			<div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 margin-of-material wow bounceInLeft" id="edit-margin-material" data-wow-delay=".2s">
 				<div class="row material">
 					<div class="col-3 col-sm-2 col-md-2 col-lg-3 col-xl-3 text-center">
 						<i class="fa fa-rebel" aria-hidden="true"></i>
@@ -365,7 +364,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+			<div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4  wow bounceInRight" data-wow-delay=".2s">
 				<img class="img-at-material" src="images/man.png">
 			</div>
 		</div>
@@ -377,17 +376,17 @@
 					<p>Contractors & Construction Managers Since 1981</p>
 				</div>
 				<div class="col-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
-					<button class="btn bg-white text-dark">GET A QUOTE</button>
+					<button class="btn">GET A QUOTE</button>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="container text-center other-say">
+	<div class="container text-center other-say wow fadeInUp" data-wow-delay="0.2s" id="testimonails">
 		<h2 class="title">WHAT OTHER SAY ABOUT US</h2>
 		<hr class="hr">
 		<p class="col-12 col-sm-12 col-md-12 col-lg-8 offset-lg-2 col-xl-8 offset-xl-2 sub-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Phasellus sit amet iaculis elit. Nam semper ut arcu non placerat. Praesent nibh massavarius consectetur</p>
 	</div>
-	<div class="container-fluid text-center mt-5">
+	<div class="container-fluid text-center mt-5 wow fadeInUp"  data-wow-delay="0.3s">
 		<div class="row col-10 offset-1 owl-carousel owl-theme" id="say">
 			<div class="item content-say">
 				<div class="image">
@@ -423,7 +422,7 @@
 			</div>	
 		</div>
 	</div>
-	<div class="container-fluid bg-why pb-5">
+	<div class="container-fluid bg-why pb-5" id="why-us">
 		<div class="row">
 			<div class="col-lg-6 col-xl-6 col-sm-12 col-md-12 col-12 delete-padding-left delete-padding">
 				<img class="img-why-us" src="images/group.jpg">
@@ -504,8 +503,8 @@
 		<h2 class="title">OUT TEAM</h2>
 		<hr class="hr">
 		<p class="col-12 col-md-12 col-lg-8 col-xl-8 offset-lg-2 offset-xl-2 sub-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Phasellus sit amet iaculis elit. Nam semper ut arcu non placerat. Praesent nibh massavarius consectetur</p>
-		<div class="row col-10 offset-1 owl-carousel owl-theme" id="test">
-			<div class="item member">
+		<div class="row col-12 col-lg-10 col-xl-10 offset-xl-1 offset-lg-1 owl-carousel owl-theme" id="test">
+			<div class="item member wow bounceInUp" data-wow-delay="0.1s">
 				<img class="img-member" src="images/team1.jpg">
 				<div class="name-member">
 					<p>Elena Lety</p>
@@ -518,7 +517,7 @@
 					<li><i class="fa fa-google-plus" aria-hidden="true"></i></i></li>
 				</ul>
 			</div>	
-			<div class="item member">
+			<div class="item member wow bounceInUp" data-wow-delay="0.2s">
 				<img class="img-member" src="images/team2.jpg">
 				<div class="name-member">
 					<p>John Halpern</p>
@@ -530,7 +529,7 @@
 					<li><i class="fa fa-google-plus" aria-hidden="true"></i></li>
 				</ul>
 			</div>	
-			<div class="item member">
+			<div class="item member wow bounceInUp" data-wow-delay="0.3s">
 				<img class="img-member" src="images/team3.jpg">
 				<div class="name-member">
 					<p>Tommy Atkins</p>
@@ -542,7 +541,7 @@
 					<li><i class="fa fa-google-plus" aria-hidden="true"></i></li>
 				</ul>
 			</div>
-			<div class="item member">
+			<div class="item member wow bounceInUp" data-wow-delay="0.4s">
 				<img class="img-member" src="images/team4.jpg">
 				<div class="name-member">
 					<p>Toretto Dominic</p>
@@ -554,7 +553,7 @@
 					<li><i class="fa fa-google-plus" aria-hidden="true"></i></li>
 				</ul>
 			</div>
-			<div class="item member">
+			<div class="item member wow bounceInUp" data-wow-delay="0.5s">
 				<img class="img-member" src="images/team6.jpg">
 				<div class="name-member">
 					<p>Paul Walker</p>
@@ -571,7 +570,7 @@
 	<div class="container-fluid maps mt-5">
 		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.9848502045684!2d105.84695211440678!3d20.99324439436688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac6dce1c3075%3A0x1151330eb74574fe!2sZent+Space!5e0!3m2!1svi!2sus!4v1562352391331!5m2!1svi!2sus" width="100%" height="340" frameborder="0" style="border:0" allowfullscreen></iframe>
 	</div>
-	<div class="container contact">
+	<div class="container contact  wow zoomIn" data-wow-delay="0.4s" id="link-contact">
 		<div class="text-center">
 			<h2 class="title">CONTACT US</h2>
 			<hr class="hr">
@@ -609,7 +608,7 @@
 						<label class="title-of-input" for="subject">Subject *</label>
 					</div>
 					<div class="block-phone">
-						<textarea placeholder="Message" required name="gopy" id="message" rows="8">
+						<textarea placeholder="Message" name="gopy" id="message" rows="8">
 						</textarea>
 					</div>
 					<button class="btn btn-block send-message" type="submit">SEND MESSAGE</button>
@@ -639,13 +638,13 @@
 	<div class="container-fluid footer">
 		<div class="row icons">
 			<ul>
-				<li>
+				<li class="delete-margin-left">
 					<a href="#">
 						<span></span>
 						<span></span>
 						<span></span>
 						<span></span>
-						<span class="fa fa-facebook edit-size-icons" aria-hidden="true"></span>
+						<span class="fa fa-facebook edit-size-icons wow fadeInDownBig" data-wow-delay=".1s" aria-hidden="true"></span>
 					</a>
 				</li>
 				<li>
@@ -654,7 +653,7 @@
 						<span></span>
 						<span></span>
 						<span></span>
-						<span class="fa fa-twitter edit-size-icons" aria-hidden="true"></span>
+						<span class="fa fa-twitter edit-size-icons wow fadeInDownBig" data-wow-delay=".2s" aria-hidden="true"></span>
 					</a>
 				</li>
 				<li>
@@ -663,7 +662,7 @@
 						<span></span>
 						<span></span>
 						<span></span>
-						<span class="fa fa-google-plus edit-size-icons" aria-hidden="true"></span>
+						<span class="fa fa-google-plus edit-size-icons wow fadeInDownBig" data-wow-delay=".3s" aria-hidden="true"></span>
 					</a>
 				</li>
 				<li>
@@ -672,7 +671,7 @@
 						<span></span>
 						<span></span>
 						<span></span>
-						<span class="fa fa-linkedin edit-size-icons" aria-hidden="true"></span>
+						<span class="fa fa-linkedin edit-size-icons wow fadeInDownBig" aria-hidden="true" data-wow-delay=".4s"></span>
 					</a>
 				</li>
 				<li>
@@ -681,7 +680,7 @@
 						<span></span>
 						<span></span>
 						<span></span>
-						<span class="fa fa-instagram edit-size-icons" aria-hidden="true"></span>
+						<span class="fa fa-instagram edit-size-icons wow fadeInDownBig" aria-hidden="true" data-wow-delay=".5s"></span>
 					</a>
 				</li>
 				<li class="mr-0">
@@ -690,7 +689,7 @@
 						<span></span>
 						<span></span>
 						<span></span>
-						<span class="fa fa-youtube-play edit-size-icons" aria-hidden="true"></span>
+						<span class="fa fa-youtube-play edit-size-icons wow fadeInDownBig" aria-hidden="true" data-wow-delay=".6s"></span>
 					</a>
 				</li>
 			</ul>
@@ -729,8 +728,8 @@
 	</div>
 	<button class="btn up-top"><i class="fas fa-arrow-up"></i></button>
 	<script type="text/javascript" src="../js/jquery.js"></script>
-	<script type="text/javascript" src="bootstrap.min.js"></script>
-	<script type="text/javascript" src="jquery.validate.min.js"></script>
+	<script type="text/javascript" src="thuvien/bootstrap.min.js"></script>
+	<script type="text/javascript" src="thuvien/jquery.validate.min.js"></script>
 	<script type="text/javascript" src="dist/wow.min.js"></script>
 	
 	<script>
@@ -738,10 +737,10 @@
 	</script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
 	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-	<script src="jquery.counterup.min.js"></script>
+	<script src="thuvien/jquery.counterup.min.js"></script>
 	<script src="owlcarousel/dist/owl.carousel.min.js"></script>
 	<script type="text/javascript" src="thuvien/jquery.simpleTicker.js"></script>
 	<script type="text/javascript" src="jsbtl.js"></script>
-	<script src="swiper.min.js"></script>
+	<script src="thuvien/swiper.min.js"></script>
 </body>
 </html>

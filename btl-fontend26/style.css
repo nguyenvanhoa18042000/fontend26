@@ -8,7 +8,9 @@
 html{
 	scroll-behavior:smooth;
 }
-
+body{
+	position: relative;
+}
 .bg-menu{
 	background-color: white;
 	box-shadow: 0 0px 8px 0 orange, 0 0px 8px 0 orange;
@@ -18,6 +20,9 @@ html{
 }
 #navbarResponsive ul li{
 	margin-right: 5px;
+}
+.badge-3{
+	background-color: #ffc925;
 }
 #navbarResponsive ul li a{
 	position: relative;
@@ -296,7 +301,7 @@ ul.menu2{
 	height: auto;
 	float: left;
 	overflow:hidden;
-	box-shadow: 0 2px 5px rgba(0,0,0,.65);
+	box-shadow: 0 2px 5px #ffc925;
 	cursor: pointer;
 	box-sizing: border-box;
 	padding: 5px;
@@ -494,6 +499,12 @@ ul.menu2{
 }
 .history button{
 	padding: 8% 24%;
+	background-color: white;
+	color: black;
+}
+.history button:hover{
+	background-color: black;
+	color: white;
 }
 .other-say{
 	padding-top: 7%;
@@ -899,6 +910,7 @@ ul.menu2{
 	right: 2%;
 	border-radius:50%; 
 	display: none;
+	z-index: 100000;
 }
 .delete-margin-top{
 	margin-top: 0;
@@ -914,8 +926,14 @@ ul.menu2{
 }
 /*responsive*/
 @media (max-width: 576px){
+	#edit-navbar{
+		text-align: center;
+	}
+	#news-ticker-roll{
+		margin-bottom: 0;
+	}
 	.album-slide img {
-		height: 350px;
+		height: 300px;
 	}
 	.title{
 		font-size: 23px;
@@ -926,6 +944,12 @@ ul.menu2{
 		font-size: 25px;
 		margin-bottom: 2%;
 	}
+	#navbarResponsive ul li:hover a:after,#navbarResponsive ul li:hover a:before {
+    	width: 0;
+    }
+    #navbarResponsive ul li:hover a{
+    	color: #ffc925 !important;
+    }
 	.hr{
 		width: 15%;
 	}
@@ -965,6 +989,12 @@ ul.menu2{
 		width: 100%;
 		margin: 0;
 		margin-top:8%;
+	}
+	.card-header.delete-border{
+		padding: 1%;
+	}
+	.card-header.delete-border button{
+		padding: 0 0 0 2%;
 	}
 	.material i {
 		padding: 21%;
@@ -1040,10 +1070,13 @@ ul.menu2{
 		width: 100% !important;
 	}
 	.icons ul li {
-		width: 31px;
-		height: 31px;
-		margin: 0px 13px;
+		width: 29px;
+		height: 29px;
+		margin: 0px 12px;
 		transform: rotate(-30deg) skew(25deg);
+	}
+	.delete-margin-left{
+		margin-left: 0 !important;
 	}
 	.edit-size-icons:before{
 		font-size: 13px;
@@ -1056,16 +1089,31 @@ ul.menu2{
 		padding-right: 10%;
 	}
 	.menu-footer ul li a {
-		font-size: 9px;
+		font-size: 8px;
 	}
 }
 @media screen and (min-width: 576px) and (max-width: 991px) {
+	#edit-navbar{
+		text-align: center;
+	}
+	.bg-menu{
+		background-color: #f9f9f9;
+	}
 	.construction{
 		padding-bottom: 2%;
+	}
+	#news-ticker-roll{
+		padding-bottom: 8%;
 	}
 	#news-ticker-roll ul li h1{
 		font-size: 44px;
 	}
+	#navbarResponsive ul li:hover a:after,#navbarResponsive ul li:hover a:before {
+    	width: 0;
+    }
+    #navbarResponsive ul li:hover a{
+    	color: #ffc925 !important;
+    }
 	.button1,.button2{
 		padding: 14px 4%;
 	}
@@ -1182,9 +1230,13 @@ ul.menu2{
 		padding-right: 0;
 	}
 }
-@media (min-width: 992px){
+@media screen and (min-width: 991px) and (max-width: 1200px) {
+	#news-ticker-roll{
+		padding-bottom: 9%;
+	}
 	#news-ticker-roll ul li h1{
 		font-size: 60px;
+		margin-bottom: 0%;
 	}
 	.container-card-img{
 		padding: 0;
@@ -1213,5 +1265,20 @@ ul.menu2{
 	}
 	.delete-padding-right{
 		padding-right: 0;
+	}
+}
+@media (min-width: 1200px){
+	#news-ticker-roll ul li h1{
+		font-size: 70px;
+		margin-bottom: 1%;
+	}
+	.img-why-us{
+		width: 100%;
+	}
+	.delete-padding-why{
+		margin-left: 0;
+	}
+	#edit-title-of-textarea {
+		margin: 1% 0 0 5%;
 	}
 }

@@ -1,142 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	
-	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="style3.css">
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      position: relative; 
+
+  }
+  .navbar{
+      position: fixed;	
+      }
+  </style>
 </head>
-<body>
-	<div class="content col-12 mt-3">
-				<div class="col-3 content-image">
-			  		<img src="images/nha1.jpg" class="hinh all type4 type6">
-			  		<div>
-			  			<div class="info-img">
-			  				<p>Đà Nẵng</p>
-			  				<div class="show-info-img">
-			  					<p>Hạng cao cấp</p>
-			  					<p>Đặt tiền trước: 26/09/2019</p>
-			  					<p>Gía nhà: 
-			  						<span>500.000$</span>
-			  					</p>
-			  				</div>
-			  				<button class="button-detail">Detail</button>
-			  			</div>
-			  		</div>
-			  	</div>
-			  	<!-- <div class="content-image col-3">
-			   		<img src="images/nha2.jpg" class="hinh all type2 type6 type5">
-			   		<div>
-			  			<div class="info-img">
-			  				<p>Đà Nẵng</p>
-			  				<div class="show-info-img">
-			  					<p>Hạng cao cấp</p>
-			  					<p>Đặt tiền trước: 26/09/2019</p>
-			  					<p>Gía nhà: 
-			  						<span>500.000$</span>
-			  					</p>
-			  				</div>
-			  				<button class="button-detail">Detail</button>
-			  			</div>
-			  		</div>
-			  	</div>
-			  	<div class="content-image col-3">
-			   		<img src="images/nha3.jpg" class="hinh all type1 type3 type4 type5">
-			   		<div>
-			  			<div class="info-img">
-			  				<p>Đà Nẵng</p>
-			  				<div class="show-info-img">
-			  					<p>Hạng cao cấp</p>
-			  					<p>Đặt tiền trước: 26/09/2019</p>
-			  					<p>Gía nhà: 
-			  						<span>500.000$</span>
-			  					</p>
-			  				</div>
-			  				<button class="button-detail">Detail</button>
-			  			</div>
-			  		</div>
-			  	</div>
-			  	<div class="content-image col-3">
-			  		<img src="images/nha4.jpg" class="hinh all type1 type4 type6">
-			  		<div>
-			  			<div class="info-img">
-			  				<p>Đà Nẵng</p>
-			  				<div class="show-info-img">
-			  					<p>Hạng cao cấp</p>
-			  					<p>Đặt tiền trước: 26/09/2019</p>
-			  					<p>Gía nhà: 
-			  						<span>500.000$</span>
-			  					</p>
-			  				</div>
-			  				<button class="button-detail">Detail</button>
-			  			</div>
-			  		</div>
-			  	</div>
-				<div class="content-image col-3">
-			    	<img src="images/nha5.jpg" class="hinh all type3 type5 type6">
-			    	<div>
-			  			<div class="info-img">
-			  				<p>Đà Nẵng</p>
-			  				<div class="show-info-img">
-			  					<p>Hạng cao cấp</p>
-			  					<p>Đặt tiền trước: 26/09/2019</p>
-			  					<p>Gía nhà: 
-			  						<span>500.000$</span>
-			  					</p>
-			  				</div>
-			  				<button class="button-detail">Detail</button>
-			  			</div>
-			  		</div>
-			  	</div>
-			  	<div class="content-image col-3">
-			    	<img src="images/nha6.jpg" class="hinh all type1 type2 type3 type5">
-			    	<div>
-			  			<div class="info-img">
-			  				<p>Đà Nẵng</p>
-			  				<div class="show-info-img">
-			  					<p>Hạng cao cấp</p>
-			  					<p>Đặt tiền trước: 26/09/2019</p>
-			  					<p>Gía nhà: 
-			  						<span>500.000$</span>
-			  					</p>
-			  				</div>
-			  				<button class="button-detail">Detail</button>
-			  			</div>
-			  		</div>
-			  	</div>
-			  	<div class="content-image col-3">
-			    	<img src="images/nha7.jpg" class="hinh all type1 type3 type5">
-			    	<div>
-			  			<div class="info-img">
-			  				<p>Đà Nẵng</p>
-			  				<div class="show-info-img">
-			  					<p>Hạng cao cấp</p>
-			  					<p>Đặt tiền trước: 26/09/2019</p>
-			  					<p>Gía nhà: 
-			  						<span>500.000$</span>
-			  					</p>
-			  				</div>
-			  				<button class="button-detail">Detail</button>
-			  			</div>
-			  		</div>
-			  	</div>
-				<div class="content-image col-3">
-			    	<img src="images/nha8.jpg" class="hinh all type1 type3 type5">
-			    	<div>
-			  			<div class="info-img">
-			  				<p>Đà Nẵng</p>
-			  				<div class="show-info-img">
-			  					<p>Hạng cao cấp</p>
-			  					<p>Đặt tiền trước: 26/09/2019</p>
-			  					<p>Gía nhà: 
-			  						<span>500.000$</span>
-			  					</p>
-			  				</div>
-			  				<button class="button-detail">Detail</button>
-			  			</div>
-			  		</div>
-			  	</div> -->
-	</div>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav id="navbar-example2" class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a class="nav-link" href="#fat">@fat</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#mdo">@mdo</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#one">one</a>
+        <a class="dropdown-item" href="#two">two</a>
+        <div role="separator" class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#three">three</a>
+      </div>
+    </li>
+  </ul>
+</nav>
+<div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+  <h4 id="fat">@fat</h4>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita dicta laborum accusamus aut fugit aperiam suscipit iure in facere ea tempore pariatur quidem ab aspernatur ipsam, alias officia dolore tenetur beatae, fugiat aliquid. Ipsum obcaecati molestias culpa provident doloremque non est eveniet, expedita deserunt in distinctio quos natus laudantium ullam consequuntur debitis, reprehenderit voluptatibus quisquam aliquam corporis placeat ipsa nihil, porro neque nam. Animi labore voluptas, vero dolor eum voluptates velit, nisi laborum voluptatibus, eos quaerat cupiditate incidunt sed ullam. Expedita ex illo, corporis repudiandae quibusdam veritatis aliquid facilis nisi, molestias totam modi sed repellendus, atque suscipit incidunt eaque enim!</p>
+  <h4 id="mdo">@mdo</h4>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, totam ratione, dolores aspernatur doloremque, architecto laboriosam, ipsum iusto non omnis molestiae beatae! Sunt, maiores. Accusantium harum tempora doloremque totam placeat doloribus facilis error odio aliquid ipsa aspernatur dignissimos magni distinctio quam, enim dolor voluptas quod ab. Eius, ipsum! Tempora atque, repellendus animi nam, placeat illo doloribus sint eum temporibus ad assumenda totam voluptas dolor saepe dolore rem quas debitis deleniti inventore voluptatibus eaque similique? At laborum quidem dignissimos voluptatem, debitis temporibus nihil, optio numquam nulla aperiam esse. Dolores, illo quam, officiis perspiciatis, repudiandae neque maxime iste harum reprehenderit odit voluptas.</p>
+  <h4 id="one">one</h4>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus repellat possimus sed, impedit. Adipisci, consequatur omnis dolor iure beatae? Quisquam quo sequi fugiat consequatur, blanditiis, voluptatum est tenetur aperiam, provident quos perspiciatis in. Sapiente dolore quam, nihil odio recusandae doloremque ducimus reprehenderit necessitatibus autem in distinctio quae, earum voluptatum, tempore.</p>
+  <h4 id="two">two</h4>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem quod neque ea ullam laboriosam quasi aliquid quis laudantium, similique commodi assumenda quae odit modi eaque nobis non, dolor soluta hic. Voluptas iusto, quis. At, reiciendis magnam blanditiis rem minima magni deserunt impedit animi, beatae facilis hic, iure odio eius laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti rem vel aliquam earum fugiat inventore vitae provident eligendi nisi labore, consequatur dolore mollitia sit expedita excepturi officiis est totam impedit eum adipisci. Eligendi recusandae esse labore odit officia ipsa culpa ad repudiandae ratione commodi unde exercitationem rerum quo, rem expedita porro sapiente ducimus maiores aliquam nesciunt provident laudantium ut saepe? Doloribus ex est sint ipsum, consequatur in ducimus officiis, quaerat odit magnam repellendus ut, cupiditate consequuntur corrupti. Ipsum illo nisi maxime doloremque aliquam, ad recusandae reprehenderit quisquam. Quos pariatur tenetur nostrum sed omnis hic dolor repellendus totam laudantium. Sit optio reprehenderit ipsa illo quas delectus quia. Dolor fugit molestiae amet odit qui, laborum eum maxime maiores non! Aut eum error nulla, beatae autem provident, sunt po Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, placeat recusandae officiis quo libero, quisquam maiores. Quia non aliquid eligendi praesentium rem quibusdam, enim hic, nam nemo ex doloribus voluptas vel fugit et eos pariatur cupiditate repudiandae. Ratione esse tempore provident voluptatibus, architecto ipsam perferendis magni explicabo ipsa eos, culpa natus. Magni possimus officiis corporis atque quod similique? Nostrum a itaque eveniet architecto est ipsam sapiente suscipit explicabo officiis. Natus facere pariatur sequi reiciendis commodi, officiis reprehenderit optio impedit veniam in officia quam, soluta nam, eum porro. Neque fugiat amet modi aperiam, nulla placeat assumenda quos nostrum consectetur, nihil blanditiis! Blanditiis esse velit cupiditate animi accusantium repudiandae quia magni nisi commodi, molestias. Fugit laudantium magni libero itaque nostrum facilis incidunt vel quidem eius deleniti, deserunt optio, sapiente, cumque accusantium impedit nihil distinctio tempora blanditiis soluta reprehenderit voluptates tempore. Placeat debitis quisquam, vel nisi. Nam neque ab minima voluptatum facilis officia reiciendis quas illum officiis rerum. Necessitatibus officia aperiam nisi numquam vel ullam quam, laboriosam, deserunt rerum adipisci ad optio nesciunt, recusandae iure expedita modi fugiat, ea omnis assumenda molestias. Non dignissimos, laborum aliquid, rem neque minima odio porro quasi ut magnam consectetur atque asperiores nulla ratione, debitis quisquam? Ipsa possimus suscipit, iste. Alias deleniti sunt molestias omnis. Cupiditate, explicabo? Veritatis velit expedita soluta eos, fugit architecto amet maxime beatae quam, reiciendis explicabo deserunt accusamus quidem. Sapiente, aut. Quo perferendis sequi eveniet doloremque nemo tempore nam, soluta dolores, asperiores quaerat dignissimos itaque, cupiditate nostrum ullam placeat. Ipsam provident at, fuga repellat ullam. Dolorum minima error, itaque neque eum, quaerat fugiat quo quis animi omnis! Sed id excepturi mollitia deserunt, aliquam velit quod. Ab provident aut nesciunt commodi voluptas, vitae excepturi nulla, cupiditate tenetur neque voluptatem ex error ipsum aliquid, sunt laudantium, repellendus. Laudantium ipsum consequatur fugiat similique officiis delectus aspernatur nihil ipsam sint, aliquam et eligendi aliquid ipsa atque aut asperiores dolorem nostrum, officia perferendis. Error, officia id, impedit doloremque quaerat est praesentium vel quam reprehenderit dignissimos. Nulla commodi consequuntur nemo vitae soluta, unde. Nihil maxime ipsa eum ab odio suscipit architecto quos provident ipsam debitis nostrum tenetur quam placeat harum expedita quo, vel, magni vitae saepe, molestias dicta quidem ipsum! Quidem ab, id laboriosam! Repellat nulla accusamus ipsum odit cumque officia ea reiciendis ipsa unde quas, nobis minima adipisci repellendus provident quisquam nostrum totam illo enim beatae, corrupti. Dignissimos aliquid corporis quia, sunt ipsam eveniet unde nostrum necessitatibus accusamus sint, voluptas mollitia at? Vitae esse omnis molestias repellendus, architecto vel cupiditate dolorem repudiandae explicabo nisi earum, hic maxime? Necessitatibus, quos praesentium corporis aut omnis fugiat qui dicta doloribus amet sed perferendis beatae asperiores odio, officia animi porro atque hic, minus obcaecati dignissimos. Aliquam alias hic, aliquid assumenda fugit voluptatibus et minus eaque dolore, labore, iste delectus temporibus? Impedit labore minus quo alias aliquid numquam, repellendus. Incidunt cum similique, debitis doloremque tempora rem pariatur, reprehenderit consequatur vel quisquam perspiciatis rerum harum quibusdam ut sit voluptate odit temporibus delectus? Laudantium animi iure, ut, consectetur magnam labore deserunt! Minus optio corporis, nobis tempore. Asperiores pariatur recusandae maxime. Sit facilis libero harum accusamus, quibusdam, eius, incidunt ducimus, voluptatem enim laboriosam dolores explicabo. Iusto consectetur autem quae! Quo quis obcaecati, magni asperiores sequi earum neque ut, quaerat aperiam veritatis deleniti itaque velit temporibus ea autem. Exercitationem maxime dignissimos sunt, deserunt quibusdam hic porro quaerat pariatur quidem suscipit, sed tempora est fugiat molestiae qui aliquid quo ipsam reprehenderit. Nihil voluptatem expedita tempora illo suscipit, officia temporibus dicta tenetur veniam, vel quia maiores beatae unde id, quod libero cumque. Nesciunt minus labore, odio numquam dolores cumque alias facilis, tempora placeat repellat eius architecto omnis quia consequuntur maiores culpa quas dolorem perspiciatis, tenetur optio, libero nostrum impedit? Quo nemo incidunt necessitatibus magnam dolores error temporibus ducimus facilis id laborum ipsum libero, nisi facere ad aperiam neque illum deleniti architecto fuga similique atque. Optio recusandae facilis, praesentium vitae, odio quisquam sunt incidunt similique consequuntur iure sit. Dignissimos modi quisquam repudiandae nostrum suscipit mollitia inventore excepturi eos molestias consequuntur natus, tempora veritatis debitis asperiores expedita harum vel iste sed. Impedit quod laboriosam cupiditate corporis ratione totam vero nesciunt aliquid non, expedita sint velit ipsum veritatis tempore assumenda ex, explicabo illo dolores quos eius dolorem ut fugiat. Quisquam reiciendis fuga, sapiente repudiandae suscipit totam adipisci repellat accusamus sint. Ex ea, consequuntur itaque odit asperiores nam esse minus harum veniam ut officiis officia nisi repudiandae delectus architecto possimus eaque. Dicta hic dolore harum voluptate nulla possimus neque voluptatem omnis. Iusto eum aut odit, magnam quis minima laboriosam repudiandae distinctio, tempore ducimus consectetur libero. Voluptatibus id sunt autem dolorum error, explicabo sit nostrum, ipsum accusamus mollitia quos delectus voluptatem, inventore facere tenetur! Quisquam, possimus. Officiis veniam repudiandae non molestias sequi. Distinctio error cupiditate praesentium, explicabo doloremque numquam totam ut iure adipisci sint perferendis, odio autem, ad sunt, ducimus cumque iste eveniet quia atque placeat rerum reiciendis deserunt unde fuga delectus? Incidunt aliquam minima quibusdam accusamus, officia, soluta sed possimus totam iusto sunt, laudantium a natus in. Inventore mollitia nulla ipsa soluta perspiciatis assumenda eos accusamus dolorem, ullam id, laudantium corporis quasi libero esse deleniti alias et dolores odio animi architecto ut sequi numquam fuga. Nostrum distinctio eveniet magni, quae dolor est illo laudantium voluptas quos reiciendis quas sequi voluptate in! Ea earum accusamus voluptatem quibusdam, ad odio est. Iure sapiente explicabo ipsum, recusandae dicta. Voluptatum omnis ut, consectetur officiis assumenda voluptatibus blanditiis. Eum voluptatum, aliquam ipsa. Dicta, maxime. Inventore architecto aperiam unde magnam a adipisci id dignissimos. Unde, minima sed sunt temporibus nobis ullam rem suscipit perspiciatis labore laborum. Praesentium ex, aspernatur doloribus eos ipsa atque quidem sequi vel! Architecto rem suscipit laudantium neque perspiciatis, repellat, id nesciunt obcaecati veniam odio velit voluptatum, fuga rerum! A alias totam eius cum. Accusamus earum, totam quae nostrum! Nobis necessitatibus expedita voluptas aut deleniti. Maxime, sint, beatae. Vel sed, amet cum minima rem ab. Ipsam distinctio, labore iure fugit, facere, nulla numquam corporis optio qui incidunt similique. Accusamus atque facilis, quos nulla voluptatibus eveniet, sint impedit repellat nobis id sunt beatae accusantium suscipit mollitia maiores natus. ssimus quos quas temporibus dicta quia cumque quod. Doloribus repellendus eveniet illum possimus expedita suscipit perferendis fugit itaque quia fuga quo nisi quis veniam, recusandae odio deserunt dicta similique, quibusdam, non. Excepturi porro, ex at vitae enim iure voluptatem, esse debitis, provident doloremque praesentium! Ut beatae deleniti dolore ducimus, doloremque ratione voluptatem assumenda eius, doloribus numquam totam saepe, eligendi consequuntur illo ea quas earum minima quasi fugiat minus. Voluptate, atque iure officia recusandae veritatis cum quo vitae neque numquam accusantium distinctio consequuntur doloremque at eius sapiente dolorum tempore vel, modi! Officia voluptatem facere vel, saepe quo minus repudiandae quis natus facilis obcaecati magnam, architecto nesciunt atque repellat distinctio, neque accusantium. Odit odio omnis cupiditate placeat totam praesentium reiciendis consequatur explicabo provident repellendus consequuntur maiores quod rerum nemo natus enim, facere aliquid, obcaecati maxime minima. Quisquam eius, veniam dicta quos excepturi iusto aliquid voluptates a enim quidem, sed molestiae consectetur amet! Praesentium, accusamus a consequatur, unde, eos nemo minus assumenda aperiam tempora, vitae nihil voluptatibus! Expedita, fugiat earum eveniet ducimus placeat debitis delectus architecto molestiae, necessitatibus. Possimus sit quis mollitia ullam non, quae eos dolorum! Facilis nisi delectus, pariatur, sed illum distinctio. Rerum recusandae quo numquam nemo, eius veniam ut? Natus temporibus eligendi sunt magni ea culpa deserunt! Aliquid exercitationem tempore, accusamus animi. Dicta nobis illo, animi assumenda dolores blanditiis accusantium, sint officiis eum excepturi temporibus labore. Harum modi quibusdam suscipit reprehenderit sunt totam necessitatibus a quae praesentium accusantium quo, quaerat enim consectetur assumenda. Quo eos at molestiae earum tenetur optio eveniet nobis ducimus libero nostrum, aut magnam alias aperiam quas ullam quae nesciunt doloribus praesentium adipisci. Voluptatum fuga, nostrum asperiores! Optio molestias, iure sit adipisci?</p>
+  <h4 id="three">three</h4>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maiores animi nemo voluptates saepe voluptate quia, vel expedita in provident quod ipsam facere assumenda repudiandae totam odit aperiam explicabo reprehenderit pariatur aliquid repellendus iusto et, praesentium. Officia inventore ex rem dolorum, quibusdam eaque quia, tempora, commodi dicta architecto harum unde.</p>
+</div>
+
 </body>
 </html>
